@@ -24,9 +24,10 @@ body{
                         "footer footer footer";
 }
 
+/* agrege un gradient en el fondo del header */
 header{
     grid-area: header;
-    background-color: rgba(255, 0, 0, 0.219);
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.219), black, rgba(255, 0, 0, 0.219));
     padding-bottom: 10px;
 }
 
@@ -56,9 +57,10 @@ header{
     grid-area: sectionM;
 }
 
+/* agrego gradient para el fondo del menu */
 .menu{
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.87);
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.219), black, rgba(255, 0, 0, 0.219));
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -86,11 +88,28 @@ header{
     color:red;
 }
 
+/* agrego transfortmacion y transicion al menu */
+.sectionM nav ul li:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
 .sectionF{
     grid-area: sectionF;
     display: flex;
     justify-content: flex-start;
     margin-left: 20px;
+}
+
+
+/* agrego animacion */
+@keyframes latir{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.01)
+    }
 }
 
 .frase{
@@ -99,6 +118,10 @@ header{
     font-family: 'Anton', sans-serif;
     margin-left: 60px;
     margin-top: 30px;
+    animation-name: latir;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+
 }
 
 .sectionV{
@@ -155,10 +178,12 @@ header{
     border-radius: 50%;
 }
 
+/* agrego transformacion al link de redes */
 .insta1:hover{
     width: 55px;
     border-radius: 50%;
     border: 3px red solid;
+    transform: scale(1.3);
 }
 
 footer{
