@@ -1,0 +1,544 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+/* ---------------------------- index ----------------------- */
+
+body{
+    background-image: url(../img/fondo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+/* el fondo tuve que ponerlo sobre "body" porque sino me dejaba afuera el footer */
+
+.bodyIndex{
+    height: 100vh;
+    display: grid;
+    
+    grid-template-areas:"header header header"
+                        "sectionM sectionM sectionM"
+                        "sectionF redes sectionV"
+                        "sectionF redes sectionV"
+                        "footer footer footer";
+}
+
+header{
+    grid-area: header;
+    background-color: rgba(255, 0, 0, 0.219);
+    padding-bottom: 10px;
+}
+
+.logo1{
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid rgba(0, 0, 0, 0.87);
+}
+
+.titulo1{
+    margin-top: -10rem;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+.subtitulo1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: white;
+}
+
+.sectionM{
+    grid-area: sectionM;
+}
+
+.menu{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.menu li{
+    display: inline-block;
+    background-color:  rgba(255, 0, 0, 0.219);
+    font-size: 30px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px 50px;
+    border: 1px white solid;
+}
+
+.sectionM nav ul li a{
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive; 
+    color: white;
+}
+
+.sectionM nav ul li a:hover{
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive; 
+    color:red;
+}
+
+.sectionF{
+    grid-area: sectionF;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.frase{
+    font-size: 30px;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.sectionV{
+    grid-area: sectionV;
+}
+
+.video1{
+    display: flex;
+    justify-content: end;
+}
+
+.video{
+    width: 350px ;
+    border:solid 5px rgba(255, 0, 0, 0.219);
+    margin-right: 30px;
+
+}
+
+.sectionR{
+    grid-area: redes;
+}
+
+.redes{
+    padding: 5px;
+    font-family: 'Bebas Neue', cursive; 
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.redes h3{
+    background-color: rgba(255, 0, 0, 0.219);
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px white solid;
+    
+}
+
+.redes2{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.redes2 a{
+    margin: 10px;
+}
+
+.insta1{
+    width: 55px;
+    border-radius: 50%;
+}
+
+.insta1:hover{
+    width: 55px;
+    border-radius: 50%;
+    border: 3px red solid;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+footer h4{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px ;
+    margin-right: 5px;
+}
+
+/* media queriee - version tablet */
+
+@media only screen and (min-width:600px) and (max-width:1023px){
+    body{
+        background-color: black;
+        background-image: none;
+    }
+    
+    .bodyIndex{
+        height: 100vh;
+        display: grid;
+        grid-template-areas:"header header header"
+                            "sectionM sectionM sectionM"
+                            "sectionF sectionV redes"
+                            "sectionF sectionV redes"
+                            "footer footer footer";
+    }
+    
+    .logo1{
+        width: 110px;
+    }
+    
+    .titulo1{
+        margin-top: -7rem;
+        font-size: 35px;
+    }
+    
+    .subtitulo1{
+        margin-bottom: 25px;
+    }
+    
+    .menu{
+        background-color: rgba(255, 255, 255, 0.089);
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+    
+    .menu li{
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .sectionF{
+        margin-left: 15px;
+    }
+    
+    .video{
+        width: 300px ;
+    }
+    
+    .redes{
+        text-align: center;
+    }
+    
+    .insta1{
+        width: 50px;
+    }
+    
+    .insta1:hover{
+        width: 50px;
+    }
+    
+    footer h4{
+        font-size: 12px ;
+    }
+}
+
+/* media querie - version mobile */
+
+@media only screen and (min-width:320px) and (max-width:599px){
+    body{
+        background-image: url(../img/fondo4.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .bodyIndex{
+        height: 100vh;
+        display: grid;
+        
+        grid-template-areas:"header header"
+                            "sectionM sectionF"
+                            "sectionM sectionF"
+                            "sectionM sectionV"
+                            "sectionM sectionV"
+                            "redes redes"
+                            "footer footer";
+    }
+  
+    header{
+        grid-area: header;
+        padding-bottom: 10px;
+    }
+    
+    .logo1{
+        width: 100px;
+    }
+    
+    .titulo1{
+        margin-top: -5rem;
+        font-size: 30px;
+        margin-left: 30px;
+    }
+    
+    .subtitulo1{
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    
+    .menu{
+        margin-bottom: 15px;
+        margin-top: 60px;
+    }
+    
+    .menu li{
+        display: block;
+        font-size: 30px;
+        margin: 30px;
+    }
+    
+    .frase{
+        font-size: 30px;
+        margin-left: 60px;
+        margin-top: 60px;
+    }
+    
+    .video{
+        width: 250px ;
+    }
+    
+    .redes{
+        margin-top: 30px;
+    }
+    
+    .redes2 a{
+        margin: 15px;
+    }
+    
+    .insta1{
+        width: 70px;
+    }
+    
+    footer h4{
+        font-size: 10px ;
+    }
+
+}  
+
+/* ------------------actividades ------------------ */
+
+.bodyP{
+    background-image: url(../img/fondoNegro.jpg);
+    background-size: cover;
+}
+
+.headerAct{
+    background-color: rgba(255, 0, 0, 0.219); 
+}
+
+.tPage{
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: -2rem;
+}
+
+.logoHome{
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid rgba(0, 0, 0, 0.87);
+}
+
+.headerP nav ul li a{
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive; 
+    color: white;
+}
+
+.headerP nav ul li a:hover{
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive; 
+    color:red;
+}
+
+.menu2{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.87);
+    position: sticky;
+    top: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.menu2 li{
+    display: inline-block;
+    background-color:  rgba(255, 0, 0, 0.219);
+    font-size: 30px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px 50px;
+    border: 1px white solid;
+}
+
+.tituloP{
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+
+.table{
+    color: white;
+}
+
+table{
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    margin-bottom: 1px;
+}
+
+
+th, td{
+    width: 50%;
+}
+
+.footAct{
+    position: relative;
+}
+
+footer h2{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px ;
+    text-align: right;
+    position: relative;
+    top: 70px;
+} /* no se como hacer para que el footer me quede pegado abajo de mi pagina  */
+
+/* -------------------------- contactanos---------- */
+
+.sectionDatos{
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    margin-bottom: 1px;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.87);
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.datos1{
+    margin-bottom: 20px;
+}
+
+.tel{
+    font-size: 40px;
+    text-decoration:underline rgba(255, 0, 0, 0.219);
+    margin-bottom: 5px;
+}
+
+.redesCont{
+    font-size: 40px;
+    text-decoration:underline rgba(255, 0, 0, 0.219);
+    margin-bottom: 5px;
+}
+
+.formT{
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.219);
+}
+
+main{
+    position:relative;
+}
+
+.formCont{
+    width: 50%;
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+/* quisiera que el formulario me quede en el centro de la pagina pero no puedo */
+
+.legendF{
+    color: white;
+    font-size: 30px;
+    text-decoration: underline rgba(255, 0, 0, 0.219);
+    text-align: center;
+}
+
+.ayuda{
+    text-decoration: underline solid rgba(255, 0, 0, 0.219);
+}
+
+/* ---------- Sobre nosotros---------- */
+
+.historia{
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px 1px 10px 1px;
+    margin-bottom: 20px;
+}
+
+.tHistoria{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline rgba(255, 0, 0, 0.219);
+    padding-top: 5px;
+}
+
+.img{
+    background-color: rgba(255, 0, 0, 0.219);
+    text-align: center;
+    padding: 20px;
+}
+
+.img2{
+    width: 400px;
+    border: solid rgba(0, 0, 0, 0.87) 5px
+}
+
+.footSn{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px ;
+    text-align: right;
+    position: relative;
+    top: 70px;
+    background-image: url(../img/fondoNegro.jpg);
+}
+
+/* -------------- galeria---------- */
+.img3{
+    width: 230px;
+}
+
+.footG{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px ;
+    text-align: right;
+    position: relative;
+    top: 70px;
+    background-image: url(../img/fondoNegro.jpg);
+}
