@@ -421,9 +421,8 @@ footer h4{
 }
 
 table{
-    width: 100%;
     font-family: 'Bebas Neue', cursive;
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 1px;
 }
 
@@ -432,20 +431,12 @@ th, td{
     width: 50%;
 }
 
-.footAct{
-    position: relative;
-    
-}
-
 footer h2{
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 15px ;
-    text-align: right;
-    position: relative;
-    top: 70px;
-} /* no se como hacer para que el footer me quede pegado abajo de mi pagina  */
-
+}
+ 
 /* -------------------------- contactanos---------- */
 
 .sectionDatos{
