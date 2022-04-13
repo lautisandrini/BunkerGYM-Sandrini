@@ -353,6 +353,7 @@ footer h4{
 .bodyP{
     background-image: url(../img/fondoNegro.jpg);
     background-size: cover;
+    background-repeat: repeat;
 }
 
 .headerAct{
@@ -433,6 +434,7 @@ th, td{
 
 .footAct{
     position: relative;
+    
 }
 
 footer h2{
@@ -549,8 +551,7 @@ main{
     font-size: 15px ;
     text-align: right;
     position: relative;
-    top: 70px;
-    background-image: url(../img/fondoNegro.jpg);
+    
 }
 
 /* -------------- galeria---------- */
@@ -564,6 +565,4 @@ main{
     font-size: 15px ;
     text-align: right;
     position: relative;
-    top: 70px;
-    background-image: url(../img/fondoNegro.jpg);
-}
+    }
