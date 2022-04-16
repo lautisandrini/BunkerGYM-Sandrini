@@ -164,8 +164,7 @@ body{
     background-color: rgba(255, 0, 0, 0.219);
     padding-left: 30px;
     padding-right: 30px;
-    border: 1px white solid;
-    
+    border: 1px white solid;    
 }
 
 .redes2{
@@ -505,6 +504,7 @@ footer h2{
     text-align: center;
     background-color: rgba(0, 0, 0, 0.87);
     padding-top: 15px;
+    padding-bottom: 15px;
     margin-top: 1rem;
 }
 
@@ -514,9 +514,12 @@ footer h2{
     margin-bottom: 5px;
 }
 
+.redesC a{
+    margin: 15px;
+}
+
 .formu{
     grid-area: formu;
-    
 }
 
 .formT{
@@ -556,12 +559,45 @@ footer h2{
     text-decoration: underline solid rgba(255, 0, 0, 0.219);
 }
 
-
 .footerC{
     grid-area: footerC;
 }
 
 /* ---------- Sobre nosotros---------- */
+
+.bodySn{
+    height: 100vh;
+    display: grid;
+
+    grid-template-areas:"headerSn headerSn headerSn"
+                        "mainSn mainSn mainSn"
+                        "mainSn mainSn mainSn"
+                        "equipo equipo equipo"
+                        "equipo equipo equipo"
+                        "equipo equipo equipo"
+                        "footerSn footerSn footerSn";
+}
+
+.headerSn{
+    grid-area: headerSn;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.219), black, rgba(255, 0, 0, 0.219));
+}
+
+.headerSn nav ul li a{
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive; 
+    color: white;
+}
+
+.headerSn nav ul li a:hover{
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive; 
+    color:red;
+}
+
+.mainSn{
+    grid-area: mainSn;
+}
 
 .historia{
     margin-top: 10px;
@@ -582,25 +618,25 @@ footer h2{
     padding-top: 5px;
 }
 
-.img{
+.equipo{
+    grid-area: equipo;
     background-color: rgba(255, 0, 0, 0.219);
     text-align: center;
     padding: 20px;
 }
 
-.img2{
+.img{
     width: 400px;
     border: solid rgba(0, 0, 0, 0.87) 5px
 }
 
-.footSn{
+.footerSn{
+    grid-area: footerSn;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 15px ;
-    text-align: right;
-    position: relative;
-    
+    font-size: 10px;
 }
+
 
 /* -------------- galeria---------- */
 .img3{
