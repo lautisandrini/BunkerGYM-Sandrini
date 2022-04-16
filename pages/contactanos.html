@@ -25,141 +25,150 @@
 
 <body class="bodyP">
 
-    <header class="headerP">
-        <a href="../index.html"><img class="logoHome" src="../img/logo2.jpg" alt=""></a>
+    <div class="bodyContactanos">
 
-        <h1 class="tPage">
-            Bunker Omega | Entrenamiento 100% personalizado
-        </h1>
+        <header class="headerC">
+            <a href="../index.html"><img class="logoHome" src="../img/logo2.jpg" alt=""></a>
 
-        <nav class="menu2">
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-               <li>
-                   <a href="contactanos.html">Contactanos</a>
-               </li>
-               <li>
-                   <a href="sobreNosotros.html">Sobre nosotros</a>
-               </li>
-               <li>
-                   <a href="actividades.html">Actividades</a>
-               </li>
-               <li>
-                   <a href="galeria.html">Galeria</a>
-               </li>
-           </ul>
-       </nav>
-
-    </header>
-
-    <main>
-
-        <h2 class="tituloP">
-            contactanos
-        </h2>
-
-        <section class="sectionDatos">
-            <div class="datos1">
-                <h2 class="tel">
-                    Telefono y direccion
-                </h2>
-                <p>
-                    <h3>
-                        0800-bunker-010101
-                    </h3>
-                    <h3>
-                        Gral. Fructuoso Rivera 6618, C1439CXL CABA
-                    </h3>
-                </p>
-            </div>  
-
-            <div>
-                <h3 class="redesCont">
-                    Nuestras redes
-                </h3>
-                <a href="https://www.instagram.com/el_bunker_omega/" target="_blank">
-                    <img class="insta1" src="../img/instaR.png" alt=""></a>
-                <a href="https://www.facebook.com" target="_blank">
-                    <img class="insta1" src="../img/faceR.png" alt=""></a>
-                <a href="https://www.youtube.com/channel/UCQ0MMCCkJs7OzIOeqAuGxZg" target="_blank">
-                    <img class="insta1" src="../img/youtube.png" alt=""></a>
-            </div>
-         
+            <h1 class="tPage">
+                Bunker Omega | Entrenamiento 100% personalizado
+            </h1>
+            
+            <nav class="menu2">
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                   <li>
+                       <a href="contactanos.html">Contactanos</a>
+                   </li>
+                   <li>
+                       <a href="sobreNosotros.html">Sobre nosotros</a>
+                   </li>
+                   <li>
+                       <a href="actividades.html">Actividades</a>
+                   </li>
+                   <li>
+                       <a href="galeria.html">Galeria</a>
+                   </li>
+               </ul>
+           </nav>
+        </header>
+        
+        <main class="info">
+            <h2 class="tituloP">
+                contactanos
+            </h2>
+        
+            <section class="sectionDatos">
+                <div class="datos1">
+                    <h2 class="tel">
+                        Telefono y direccion
+                    </h2>
+                    <p>
+                        <h3>
+                            0800-bunker-010101
+                        </h3>
+                        <h3>
+                            Gral. Fructuoso Rivera 6618, CP: 1439, CABA
+                        </h3>
+                    </p>
+                </div>
+            </section>
+        </main>
+        
+        <section class="redesC">
+            <h3 class="redesCont">
+                Nuestras redes
+            </h3>
+            <a href="https://www.instagram.com/el_bunker_omega/" target="_blank">
+                <img class="insta1" src="../img/instaR.png" alt=""></a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img class="insta1" src="../img/faceR.png" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCQ0MMCCkJs7OzIOeqAuGxZg" target="_blank">
+                <img class="insta1" src="../img/youtube.png" alt=""></a>
         </section>
 
-        <div class="formT">
+        <section class="formu">
+            <div class="formT">
+                <h4>
+                    o Completa el formulario y nosotros te contactamos
+                </h4>
+            </div>    
+            
+
+            <div class="contForm">
+                <form class="formCont" action="">
+                        <fieldset>
+                            <legend class="legendF">
+                                Formulario de contacto
+                            </legend>
+                
+                            <div>
+                                <label for="nombre">Nombre y apellido</label>
+                                <input type="text" name="nombre" placeholder="escribe tu nombre">
+                            </div>
+                
+                            <div>
+                                <label for="telefono">Telefono</label>
+                                <input type="text" name="telefono" placeholder="dejanos un telefono">
+                            </div>
+                            
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" placeholder="escribe tu email">
+                            </div>
+                
+                            <div>
+                                <label for="consulta">¿Sobre que es tu consulta?</label>
+                                <select name="consulta" id="">
+                                    <option value="Musculacion">Musculacion</option>
+                                    <option value="Boxeo">Boxeo</option>
+                                    <option value="Kickboxing">Kickboxing</option>
+                                    <option value="Otro tema">Otro tema</option>
+                                    <option value="T. de elongacion">T. de elongacion</option>
+                                </select>
+                            </div>
+                
+                            <div class="ayuda">
+                                <div>
+                                    <label for="aclaracion"> Contanos brevemente en que podemos ayudarte</label>
+                                </div>
+                                
+                                <div>
+                                    <textarea name="aclaracion" id="" cols="50" rows="10"></textarea>
+                                </div>
+                            </div>
+                
+                            <div>
+                                <label for="medio">¿Que medio de contacto prefieres?</label>
+                               
+                                <input type="radio" name="medio" value="Whastapp"> Whastapp
+                                
+                                <input type="radio" name="medio" value="Email"> Email
+                                
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" name="" id="">Aceptar terminos y condiciones
+                            </div>
+                
+                            <div>
+                                <input type="submit" value="Enviar"> 
+                                <input type="reset" value="Limpiar todo">
+                            </div>
+                
+                        </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footerC">
             <h4>
-                o Completa el formulario y nosotros te contactamos
+                Todos los derechos reservados | Pagina web creada por Lautaro Sandrini
             </h4>
-        </div>    
-        
-        <form class="formCont" action="">
-                <fieldset>
-                    <legend class="legendF">
-                        Formulario de contacto
-                    </legend>
-
-                    <div>
-                        <label for="nombre">Nombre y apellido</label>
-                        <input type="text" name="nombre" placeholder="escribe tu nombre">
-                    </div>
-
-                    <div>
-                        <label for="telefono">Telefono</label>
-                        <input type="text" name="telefono" placeholder="dejanos un telefono">
-                    </div>
-                    
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" placeholder="escribe tu email">
-                    </div>
-
-                    <div>
-                        <label for="consulta">¿Sobre que es tu consulta?</label>
-                        <select name="consulta" id="">
-                            <option value="Musculacion">Musculacion</option>
-                            <option value="Boxeo">Boxeo</option>
-                            <option value="Kickboxing">Kickboxing</option>
-                            <option value="Otro tema">Otro tema</option>
-                        </select>
-                    </div>
-
-                    <div class="ayuda">
-                        <label for="aclaracion"> Contanos brevemente en que podemos ayudarte</label>
-                        <br> <!-- aca puse un br porque no supe como separar el area de texto -->
-                        <textarea name="aclaracion" id="" cols="30" rows="10"></textarea>
-                    </div>
-
-                    <div>
-                        <label for="medio">¿Que medio de contacto prefieres?</label>
-                       
-                        <input type="radio" name="medio" value="Whastapp"> Whastapp
-                        
-                        <input type="radio" name="medio" value="Email"> Email
-                        
-                    </div>
-                    
-                    <div>
-                        <input type="checkbox" name="" id="">Aceptar terminos y condiciones
-                    </div>
-
-                    <div>
-                        <input type="submit" value="Enviar"> 
-                        <input type="reset" value="Limpiar todo">
-                    </div>
-
-                </fieldset>
-        </form>
-    
-    </main>
-
-    <footer>
-        <h4>
-            Todos los derechos reservados | Pagina web creada por Lautaro Sandrini
-        </h4>
-    </footer>
+        </footer>
+    </div>
 
 </body>
 </html>

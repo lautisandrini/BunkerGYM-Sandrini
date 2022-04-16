@@ -25,7 +25,7 @@ body{
 }
 
 /* agrege un gradient en el fondo del header */
-header{
+.headerI{
     grid-area: header;
     background-image: linear-gradient(to right, rgba(255, 0, 0, 0.219), black, rgba(255, 0, 0, 0.219));
     padding-bottom: 10px;
@@ -362,7 +362,7 @@ footer h4{
     background-repeat: repeat;
 }
 
-.headerAct{
+.headerP{
     background-color: rgba(255, 0, 0, 0.219); 
 }
 
@@ -395,8 +395,6 @@ footer h4{
 .menu2{
     text-align: center;
     background-color: rgba(0, 0, 0, 0.87);
-    position: sticky;
-    top: 0;
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -445,6 +443,41 @@ footer h2{
  
 /* -------------------------- contactanos---------- */
 
+.bodyContactanos{
+    height: 100vh;
+    display: grid;
+    
+    grid-template-areas:"headerC headerC headerC"
+                        "info info info"
+                        "info info info"
+                        "redesC redesC redesC"
+                        "formu formu formu"
+                        "formu formu formu"
+                        "formu formu formu"
+                        "footerC footerC footerC";
+}
+
+.headerC{
+    grid-area: headerC;
+    background-color: rgba(255, 0, 0, 0.219);
+}
+
+.headerC nav ul li a{
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive; 
+    color: white;
+}
+
+.headerC nav ul li a:hover{
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive; 
+    color:red;
+}
+
+.info{
+    grid-area: info;
+}
+
 .sectionDatos{
     width: 100%;
     font-family: 'Bebas Neue', cursive;
@@ -457,20 +490,32 @@ footer h2{
     padding-top: 15px;
 }
 
-.datos1{
-    margin-bottom: 20px;
-}
-
 .tel{
     font-size: 40px;
     text-decoration:underline rgba(255, 0, 0, 0.219);
     margin-bottom: 5px;
 }
 
+.redesC{
+    grid-area: redesC;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.87);
+    padding-top: 15px;
+    margin-top: 1rem;
+}
+
 .redesCont{
     font-size: 40px;
     text-decoration:underline rgba(255, 0, 0, 0.219);
     margin-bottom: 5px;
+}
+
+.formu{
+    grid-area: formu;
+    
 }
 
 .formT{
@@ -484,8 +529,9 @@ footer h2{
     background-color: rgba(255, 0, 0, 0.219);
 }
 
-main{
-    position:relative;
+.contForm{
+    display: flex;
+    justify-content: center;
 }
 
 .formCont{
@@ -495,9 +541,8 @@ main{
     font-size: 20px;
     color: white;
     background-color: rgba(0, 0, 0, 0.87);
+    text-align: center;
 }
-
-/* quisiera que el formulario me quede en el centro de la pagina pero no puedo */
 
 .legendF{
     color: white;
@@ -508,6 +553,11 @@ main{
 
 .ayuda{
     text-decoration: underline solid rgba(255, 0, 0, 0.219);
+}
+
+
+.footerC{
+    grid-area: footerC;
 }
 
 /* ---------- Sobre nosotros---------- */
