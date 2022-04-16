@@ -620,7 +620,6 @@ footer h2{
 
 .equipo{
     grid-area: equipo;
-    background-color: rgba(255, 0, 0, 0.219);
     text-align: center;
     padding: 20px;
 }
@@ -637,10 +636,16 @@ footer h2{
     font-size: 10px;
 }
 
-
 /* -------------- galeria---------- */
+
 .img3{
     width: 230px;
+    border: solid rgba(0, 0, 0, 0.87) 5px
+}
+
+.img2{
+    width: 400px;
+    border: solid rgba(0, 0, 0, 0.87) 5px
 }
 
 .footG{
