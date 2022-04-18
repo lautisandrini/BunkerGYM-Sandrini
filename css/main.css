@@ -272,7 +272,7 @@ footer h4{
     }
 }
 
-/* media querie - version mobile */
+/* media querie index - version mobile */
 
 @media only screen and (min-width:320px) and (max-width:599px){
     body{
@@ -300,12 +300,12 @@ footer h4{
     }
     
     .logo1{
-        width: 100px;
+        width: 60px;
     }
     
     .titulo1{
         margin-top: -5rem;
-        font-size: 30px;
+        font-size: 28px;
         margin-left: 30px;
     }
     
@@ -315,24 +315,26 @@ footer h4{
     }
     
     .menu{
-        margin-bottom: 15px;
+        padding-top:1px;
+        padding-bottom: 1px;
+        margin-bottom: 10px;
         margin-top: 60px;
     }
     
     .menu li{
         display: block;
-        font-size: 30px;
+        font-size: 25px;
         margin: 30px;
     }
     
     .frase{
-        font-size: 30px;
+        font-size: 25px;
         margin-left: 60px;
         margin-top: 60px;
     }
     
     .video{
-        width: 250px ;
+        width: 230px ;
     }
     
     .redes{
@@ -344,7 +346,7 @@ footer h4{
     }
     
     .insta1{
-        width: 70px;
+        width: 50px;
     }
     
     footer h4{
@@ -562,6 +564,107 @@ footer h2{
 .footerC{
     grid-area: footerC;
 }
+
+/* media queries page contactanos- version movil  */
+
+@media only screen and (max-width:600px){
+    .bodyP{
+        background-image: url(../img/fondo4.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .bodyContactanos{
+        height: 100vh;
+        display: grid;
+
+        grid-template-areas:"headerC headerC"
+                            "info info"
+                            "redesC redesC"
+                            "formu formu"
+                            "formu formu"
+                            "footerC footerC";
+    }
+    
+    
+    .tPage{
+        font-size: 22px;
+    }
+    
+    .logoHome{
+        width: 60px;
+    }
+
+    .menu2{
+        margin-bottom: 5px;
+        margin-top: 5px;
+        padding: 5px 0px 5px 0px;
+    }
+    
+    .menu2 li{
+        font-size: 18px;
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 5px 0px 0px 2px;
+    }
+
+    .info h2{
+        font-size: 30px;
+        padding-bottom: 5px;        
+        margin-bottom: 5px;
+    }
+
+    .sectionDatos{
+        font-size: 20px;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    
+    .tel{
+        font-size: 30px;
+    }
+    
+    .redesC{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 5px;
+    }
+    
+    .redesCont{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    
+    .redesC a{
+        margin: 10px;
+    }
+    
+    
+    .formT{
+        font-size: 25px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .contForm{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .formCont{
+        width: 100%;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    
+    .legendF{
+        font-size: 25px;
+    }
+
+}
+
 
 /* ---------- Sobre nosotros---------- */
 
