@@ -442,7 +442,12 @@ th, td{
     width: 50%;
 }
 
+footer{
+    background-color:rgba(0, 0, 0, 0.87);
+}
+
 footer h2{
+    padding: 10px;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 15px ;
@@ -573,6 +578,8 @@ footer h2{
 
 .footerC{
     grid-area: footerC;
+    padding: 10px;
+    font-size: 12px;
 }
 
 /* media queries page contactanos- version movil  */
@@ -750,7 +757,8 @@ footer h2{
     grid-area: footerSn;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 10px;
+    font-size: 12px;
+    padding: 10px;
 }
 
 /* media querie- version mobile de page sobre nosotros */
