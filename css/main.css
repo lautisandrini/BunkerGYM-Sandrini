@@ -1,821 +1,513 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing:border-box;
-}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
-/* ---------------------------- index ----------------------- */
+body {
+  background-image: url(../img/fondo2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
 
-body{
-    background-image: url(../img/fondo2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; 
-}
-/* el fondo tuve que ponerlo sobre "body" porque sino me dejaba afuera el footer */
-
-.bodyIndex{
-    height: 100vh;
-    display: grid;
-    
-    grid-template-areas:"header header header"
-                        "sectionM sectionM sectionM"
-                        "sectionF redes sectionV"
-                        "sectionF redes sectionV"
-                        "footer footer footer";
-}
-
-/* agrege un gradient en el fondo del header */
-.headerI{
+.bodyIndex {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "header header header" "sectionM sectionM sectionM" "sectionF redes sectionV" "sectionF redes sectionV" "footer footer footer"; }
+  .bodyIndex .headerI {
     grid-area: header;
     background-image: linear-gradient(to right, rgba(255, 0, 0, 0.219), black, rgba(255, 0, 0, 0.219));
-    padding-bottom: 10px;
-}
-
-.logo1{
-    width: 150px;
-    border-radius: 50%;
-    border: 5px solid rgba(0, 0, 0, 0.87);
-}
-
-.titulo1{
-    margin-top: -10rem;
-    text-align: center;
-    font-family: 'Anton', sans-serif;
-    font-size: 50px;
-    color: white;
-}
-
-.subtitulo1{
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
-    color: white;
-}
-
-.sectionM{
-    grid-area: sectionM;
-}
-
-/* agrego gradient para el fondo del menu */
-.menu{
-    text-align: center;
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.219), black, rgba(255, 0, 0, 0.219));
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.menu li{
-    display: inline-block;
-    background-color:  rgba(255, 0, 0, 0.219);
-    font-size: 30px;
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 10px 50px;
-    border: 1px white solid;
-}
-
-.sectionM nav ul li a{
-    text-decoration: none;
-    font-family: 'Bebas Neue', cursive; 
-    color: white;
-}
-
-.sectionM nav ul li a:hover{
-    text-decoration: none;
-    font-family: 'Bebas Neue', cursive; 
-    color:red;
-}
-
-/* agrego transfortmacion y transicion al menu */
-.sectionM nav ul li:hover{
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.sectionF{
-    grid-area: sectionF;
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 20px;
-}
-
-
-/* agrego animacion */
-@keyframes latir{
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(1.01)
-    }
-}
-
-.frase{
-    display: flex;
-    flex-direction: column;
-    font-size: 30px;
-    color: white;
-    font-family: 'Anton', sans-serif;
-    margin-left: 60px;
-    margin-top: 30px;
-    animation-name: latir;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
-}
-
-.colorF{
-    color: red;
-}
-
-.sectionV{
-    grid-area: sectionV;
-}
-
-.video1{
-    display: flex;
-    justify-content: end;
-}
-
-.video{
-    width: 350px ;
-    border:solid 5px rgba(255, 0, 0, 0.219);
-    margin-right: 30px;
-
-}
-
-.sectionR{
-    grid-area: redes;
-}
-
-.redes{
-    padding: 5px;
-    font-family: 'Bebas Neue', cursive; 
-    font-size: 30px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    text-align: center;
-}
-
-.redes h3{
-    background-color: rgba(255, 0, 0, 0.219);
-    padding-left: 30px;
-    padding-right: 30px;
-    border: 1px white solid;    
-}
-
-.redes2{
-    text-align: center;
-    margin-bottom: 15px;
-    margin-top: 30px;
-}
-
-.redes2 a{
-    margin: 10px;
-}
-
-.insta1{
-    width: 55px;
-    border-radius: 50%;
-}
-
-/* agrego transformacion al link de redes */
-.insta1:hover{
-    width: 55px;
-    border-radius: 50%;
-    border: 3px red solid;
-    transform: scale(1.3);
-    transition: 200ms ease;
-}
-
-footer{
-    grid-area: footer;
-    display: flex;
-    align-items: flex-end;
-    justify-content: end;
-}
-
-footer h4{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px ;
-    margin-right: 5px;
-}
-
-/* media queriee - version tablet */
-
-@media only screen and (min-width:600px) and (max-width:1023px){
-    body{
-        background-color: black;
-        background-image: none;
-    }
-    
-    .bodyIndex{
-        height: 100vh;
-        display: grid;
-        grid-template-areas:"header header header"
-                            "sectionM sectionM sectionM"
-                            "sectionF sectionV redes"
-                            "sectionF sectionV redes"
-                            "footer footer footer";
-    }
-    
-    .logo1{
-        width: 110px;
-    }
-    
-    .titulo1{
-        margin-top: -7rem;
-        font-size: 35px;
-    }
-    
-    .subtitulo1{
-        margin-bottom: 25px;
-    }
-    
-    .menu{
-        background-color: rgba(255, 255, 255, 0.089);
-        margin-bottom: 10px;
-        margin-top: 15px;
-    }
-    
-    .menu li{
+    padding-bottom: 10px; }
+    .bodyIndex .headerI div img {
+      width: 150px;
+      border-radius: 50%;
+      border: 5px solid rgba(0, 0, 0, 0.87); }
+    .bodyIndex .headerI div h1 {
+      margin-top: -8rem;
+      text-align: center;
+      font-family: 'Anton', sans-serif;
+      font-size: 60px;
+      color: white; }
+    .bodyIndex .headerI div h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 35px;
+      color: white; }
+  .bodyIndex .sectionM {
+    grid-area: sectionM; }
+    .bodyIndex .sectionM nav {
+      text-align: center;
+      background-image: linear-gradient(to right, rgba(255, 0, 0, 0.219), black, rgba(255, 0, 0, 0.219));
+      margin-bottom: 20px;
+      margin-top: 20px; }
+      .bodyIndex .sectionM nav ul li {
+        display: inline-block;
+        background-color: rgba(255, 0, 0, 0.219);
         font-size: 30px;
-        padding: 10px;
-    }
-
-    .sectionF{
-        margin-left: 15px;
-    }
-    
-    .video{
-        width: 300px ;
-    }
-    
-    .redes{
-        text-align: center;
-    }
-    
-    .insta1{
-        width: 50px;
-    }
-    
-    .insta1:hover{
-        width: 50px;
-    }
-    
-    footer h4{
-        font-size: 12px ;
-    }
-}
-
-/* media querie index - version mobile */
-
-@media only screen and (min-width:320px) and (max-width:599px){
-    body{
-        background-image: url(../img/fondo4.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .bodyIndex{
-        height: 100vh;
-        display: grid;
-        
-        grid-template-areas:"header header"
-                            "sectionM sectionF"
-                            "sectionM sectionF"
-                            "sectionM sectionV"
-                            "sectionM sectionV"
-                            "redes redes"
-                            "footer footer";
-    }
-  
-    header{
-        grid-area: header;
-        padding-bottom: 10px;
-    }
-    
-    .logo1{
-        width: 60px;
-    }
-    
-    .titulo1{
-        margin-top: -5rem;
-        font-size: 28px;
-        margin-left: 30px;
-    }
-    
-    .subtitulo1{
-        margin-bottom: 10px;
-        font-size: 18px;
-    }
-    
-    .menu{
-        padding-top:1px;
-        padding-bottom: 1px;
-        margin-bottom: 10px;
-        margin-top: 60px;
-    }
-    
-    .menu li{
-        display: block;
-        font-size: 25px;
-        margin: 30px;
-    }
-    
-    .frase{
-        font-size: 25px;
-        margin-left: 60px;
-        margin-top: 60px;
-    }
-    
-    .video{
-        width: 230px ;
-    }
-    
-    .redes{
-        margin-top: 30px;
-    }
-    
-    .redes2 a{
-        margin: 15px;
-    }
-    
-    .insta1{
-        width: 50px;
-    }
-    
-    footer h4{
-        font-size: 10px ;
-    }
-
-}  
-
-/* ------------------actividades ------------------ */
-
-.bodyP{
-    background-image: url(../img/fondoNegro.jpg);
-    background-size: cover;
-    background-repeat: repeat;
-}
-
-.headerP{
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.219), black, rgba(255, 0, 0, 0.219)); 
-    padding-bottom: 5px; 
-}
-
-.tPage{
-    font-family: 'Bebas Neue', cursive;
-    color: white;
-    font-size: 30px;
-    text-align: center;
-    margin-top: -2rem;
-}
-
-.logoHome{
-    width: 100px;
-    border-radius: 50%;
-    border: 5px solid rgba(0, 0, 0, 0.87);
-}
-
-.headerP nav ul li a{
-    text-decoration: none;
-    font-family: 'Bebas Neue', cursive; 
-    color: white;
-}
-
-.headerP nav ul li a:hover{
-    text-decoration: none;
-    font-family: 'Bebas Neue', cursive; 
-    color:red;
-}
-
-.headerP nav ul li:hover{
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.menu2{
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.87);
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.menu2 li{
-    display: inline-block;
-    background-color:  rgba(255, 0, 0, 0.219);
-    font-size: 30px;
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 10px 50px;
-    border: 1px white solid;
-}
-
-.tituloP{
-    margin-bottom: 20px;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 60px;
-    color: white;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.87);
-}
-
-
-.table{
-    color: white;
-}
-
-table{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 30px;
-    margin-bottom: 1px;
-}
-
-
-th, td{
-    width: 50%;
-}
-
-footer{
-    background-color:rgba(0, 0, 0, 0.87);
-}
-
-footer h2{
-    padding: 10px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px ;
-}
- 
-/* -------------------------- contactanos---------- */
-
-.bodyContactanos{
-    height: 100vh;
-    display: grid;
-    
-    grid-template-areas:"headerC headerC headerC"
-                        "info info info"
-                        "info info info"
-                        "redesC redesC redesC"
-                        "formu formu formu"
-                        "formu formu formu"
-                        "formu formu formu"
-                        "footerC footerC footerC";
-}
-
-.headerC{
-    grid-area: headerC;
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.219), black, rgba(255, 0, 0, 0.219));
-}
-
-.headerC nav ul li a{
-    text-decoration: none;
-    font-family: 'Bebas Neue', cursive; 
-    color: white;
-}
-
-.headerC nav ul li a:hover{
-    text-decoration: none;
-    font-family: 'Bebas Neue', cursive; 
-    color:red;
-}
-
-.headerC nav ul li:hover{
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.info{
-    grid-area: info;
-}
-
-.sectionDatos{
-    width: 100%;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 25px;
-    margin-bottom: 1px;
-    color: white;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.87);
-    padding-bottom: 15px;
-    padding-top: 15px;
-}
-
-.tel{
-    font-size: 40px;
-    text-decoration:underline rgba(255, 0, 0, 0.219);
-    margin-bottom: 5px;
-}
-
-.redesC{
-    grid-area: redesC;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 25px;
-    color: white;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.87);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-top: 1rem;
-}
-
-.redesCont{
-    font-size: 40px;
-    text-decoration:underline rgba(255, 0, 0, 0.219);
-    margin-bottom: 5px;
-}
-
-.redesC a{
-    margin: 15px;
-}
-
-.formu{
-    grid-area: formu;
-}
-
-.formT{
-    width: 100%;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: white;
-    text-align: center;
-    background-color: rgba(255, 0, 0, 0.219);
-}
-
-.contForm{
-    display: flex;
-    justify-content: center;
-}
-
-.formCont{
-    width: 50%;
-    margin-bottom: 20px;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.87);
-    text-align: center;
-}
-
-.legendF{
-    color: white;
-    font-size: 30px;
-    text-decoration: underline rgba(255, 0, 0, 0.219);
-    text-align: center;
-}
-
-.ayuda{
-    text-decoration: underline solid rgba(255, 0, 0, 0.219);
-}
-
-.footerC{
-    grid-area: footerC;
-    padding: 10px;
-    font-size: 12px;
-}
-
-/* media queries page contactanos- version movil  */
-
-@media only screen and (max-width:600px){
-    .bodyP{
-        background-image: url(../img/fondo4.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .bodyContactanos{
-        height: 100vh;
-        display: grid;
-
-        grid-template-areas:"headerC headerC"
-                            "info info"
-                            "redesC redesC"
-                            "formu formu"
-                            "formu formu"
-                            "footerC footerC";
-    }
-    
-    
-    .tPage{
-        font-size: 22px;
-    }
-    
-    .logoHome{
-        width: 60px;
-    }
-
-    .menu2{
-        margin-bottom: 5px;
-        margin-top: 5px;
-        padding: 5px 0px 5px 0px;
-    }
-    
-    .menu2 li{
-        font-size: 18px;
         padding: 5px;
         padding-left: 20px;
         padding-right: 20px;
-        margin: 5px 0px 0px 2px;
-    }
+        margin: 10px 50px;
+        border: 1px white solid; }
+        .bodyIndex .sectionM nav ul li:hover {
+          transform: scale(1.1);
+          transition: 1s; }
+        .bodyIndex .sectionM nav ul li a {
+          text-decoration: none;
+          font-family: 'Bebas Neue', cursive;
+          color: white; }
+          .bodyIndex .sectionM nav ul li a:hover {
+            text-decoration: none;
+            font-family: 'Bebas Neue', cursive;
+            color: red; }
 
-    .info h2{
-        font-size: 30px;
-        padding-bottom: 5px;        
-        margin-bottom: 5px;
-    }
+@keyframes latir {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.01); } }
+  .bodyIndex .sectionF {
+    grid-area: sectionF;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px; }
+    .bodyIndex .sectionF p {
+      display: flex;
+      flex-direction: column;
+      font-size: 30px;
+      color: white;
+      font-family: 'Anton', sans-serif;
+      margin-left: 60px;
+      margin-top: 30px;
+      animation-name: latir;
+      animation-iteration-count: infinite;
+      animation-duration: 2s; }
+      .bodyIndex .sectionF p span {
+        color: red; }
+  .bodyIndex .sectionV {
+    grid-area: sectionV;
+    display: flex;
+    justify-content: end; }
+    .bodyIndex .sectionV video {
+      width: 300px;
+      border: solid 5px rgba(255, 0, 0, 0.219);
+      margin-right: 100px; }
+  .bodyIndex .sectionR {
+    grid-area: redes; }
+    .bodyIndex .sectionR .redes {
+      padding: 5px;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 30px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      margin-top: 60px;
+      text-align: center; }
+      .bodyIndex .sectionR .redes h3 {
+        background-color: rgba(255, 0, 0, 0.219);
+        padding-left: 30px;
+        padding-right: 30px;
+        border: 1px white solid; }
+    .bodyIndex .sectionR .redes2 {
+      text-align: center;
+      margin-bottom: 15px;
+      margin-top: 30px; }
+      .bodyIndex .sectionR .redes2 a {
+        margin: 10px; }
+      .bodyIndex .sectionR .redes2 img {
+        width: 55px;
+        border-radius: 50%; }
+        .bodyIndex .sectionR .redes2 img:hover {
+          width: 55px;
+          border-radius: 50%;
+          border: 3px red solid;
+          transform: scale(1.3);
+          transition: 300ms ease; }
+  .bodyIndex .footerI {
+    grid-area: footer;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end; }
+    .bodyIndex .footerI h4 {
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      margin-right: 5px; }
 
-    .sectionDatos{
-        font-size: 20px;
-        margin-bottom: 5px;
-        padding-bottom: 5px;
-        padding-top: 5px;
-    }
-    
-    .tel{
-        font-size: 30px;
-    }
-    
-    .redesC{
-        padding-top: 5px;
-        padding-bottom: 5px;
-        margin-top: 5px;
-    }
-    
-    .redesCont{
-        font-size: 30px;
-        margin-bottom: 5px;
-    }
-    
-    .redesC a{
-        margin: 10px;
-    }
-    
-    .formT{
-        font-size: 25px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    
-    .contForm{
-        display: flex;
-        justify-content: center;
-    }
-    
-    .formCont{
-        width: 100%;
-        margin-bottom: 5px;
-        font-size: 20px;
-    }
-    
-    .legendF{
-        font-size: 25px;
-    }
-
-}
-
-
-/* ---------- Sobre nosotros---------- */
-
-.bodySn{
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+  body {
+    background-image: url(../img/fondo4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .bodyIndex {
     height: 100vh;
     display: grid;
+    grid-template-areas: "header header" "sectionM sectionF" "sectionM sectionF" "sectionM sectionV" "sectionM sectionV" "redes redes" "footer footer"; }
+    .bodyIndex .headerI {
+      grid-area: header;
+      padding-bottom: 10px; }
+      .bodyIndex .headerI div img {
+        width: 60px; }
+      .bodyIndex .headerI div h1 {
+        margin-top: -3rem;
+        font-size: 28px;
+        margin-left: 30px; }
+      .bodyIndex .headerI div h2 {
+        margin-bottom: 10px;
+        font-size: 18px; }
+    .bodyIndex .sectionM nav {
+      padding-top: 1px;
+      padding-bottom: 1px;
+      margin-bottom: 10px;
+      margin-top: 50px; }
+      .bodyIndex .sectionM nav ul li {
+        display: block;
+        font-size: 25px;
+        margin: 30px; }
+    .bodyIndex .sectionF p {
+      font-size: 25px;
+      margin-left: 60px;
+      margin-top: 60px; }
+    .bodyIndex .sectionV {
+      display: flex;
+      align-items: flex-end; }
+      .bodyIndex .sectionV video {
+        width: 230px;
+        margin-bottom: 5rem;
+        margin-right: 2rem; }
+    .bodyIndex .sectionR .redes {
+      margin-top: 30px; }
+    .bodyIndex .sectionR .redes2 a {
+      margin: 15px; }
+    .bodyIndex .sectionR .redes2 img {
+      width: 50px; }
+    .bodyIndex .footerI h4 {
+      font-size: 10px; } }
 
-    grid-template-areas:"headerSn headerSn headerSn"
-                        "mainSn mainSn mainSn"
-                        "mainSn mainSn mainSn"
-                        "equipo equipo equipo"
-                        "equipo equipo equipo"
-                        "equipo equipo equipo"
-                        "footerSn footerSn footerSn";
-}
-
-.headerSn{
-    grid-area: headerSn;
+/* ------------------actividades ------------------ */
+.bodyP {
+  background-image: url(../img/fondoNegro.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  grid-template-areas: "headerA headerA headerA" "headerA headerA headerA" "mainA mainA mainA" "mainA mainA mainA" "mainA mainA mainA" "mainA mainA mainA" "footerA fotterA footerA"; }
+  .bodyP .headerA {
+    grid-area: headerA;
     background-image: linear-gradient(to right, rgba(255, 0, 0, 0.219), black, rgba(255, 0, 0, 0.219));
-}
+    padding-bottom: 5px; }
+    .bodyP .headerA img {
+      width: 100px;
+      border-radius: 50%;
+      border: 5px solid rgba(0, 0, 0, 0.87); }
+    .bodyP .headerA h1 {
+      font-family: 'Bebas Neue', cursive;
+      color: white;
+      font-size: 30px;
+      text-align: center;
+      margin-top: -2rem; }
+    .bodyP .headerA nav {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.87);
+      margin-bottom: 20px;
+      margin-top: 20px; }
+      .bodyP .headerA nav ul li {
+        display: inline-block;
+        background-color: rgba(255, 0, 0, 0.219);
+        font-size: 30px;
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 10px 50px;
+        border: 1px white solid; }
+        .bodyP .headerA nav ul li:hover {
+          transform: scale(1.1);
+          transition: 1s; }
+        .bodyP .headerA nav ul li a {
+          text-decoration: none;
+          font-family: 'Bebas Neue', cursive;
+          color: white; }
+          .bodyP .headerA nav ul li a:hover {
+            text-decoration: none;
+            font-family: 'Bebas Neue', cursive;
+            color: red; }
+  .bodyP main {
+    grid-area: mainA; }
+    .bodyP main h2 {
+      margin-bottom: 20px;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 60px;
+      color: white;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.87); }
+    .bodyP main div table {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 30px;
+      margin-bottom: 1px;
+      color: white; }
+    .bodyP main div tbody th, .bodyP main div tbody td {
+      width: 50%; }
+  .bodyP footer {
+    grid-area: footerA;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    background-color: rgba(0, 0, 0, 0.87); }
+    .bodyP footer h2 {
+      padding: 10px;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px; }
 
-.headerSn nav ul li a{
-    text-decoration: none;
-    font-family: 'Bebas Neue', cursive; 
-    color: white;
-}
+/* -------------------------- contactanos---------- */
+.bodyContactanos {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "headerC headerC headerC" "info info info" "info info info" "redesC redesC redesC" "formu formu formu" "formu formu formu" "formu formu formu" "footerC footerC footerC"; }
 
-.headerSn nav ul li a:hover{
-    text-decoration: none;
-    font-family: 'Bebas Neue', cursive; 
-    color:red;
-}
+.headerC {
+  grid-area: headerC;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.219), black, rgba(255, 0, 0, 0.219)); }
 
-.headerSn nav ul li:hover{
-    transform: scale(1.1);
-    transition: 1s;
-}
+.headerC nav ul li a {
+  text-decoration: none;
+  font-family: 'Bebas Neue', cursive;
+  color: white; }
 
-.mainSn{
-    grid-area: mainSn;
-}
+.headerC nav ul li a:hover {
+  text-decoration: none;
+  font-family: 'Bebas Neue', cursive;
+  color: red; }
 
-.historia{
-    margin-top: 10px;
-    background-color: rgba(0, 0, 0, 0.87);
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 20px;
+.headerC nav ul li:hover {
+  transform: scale(1.1);
+  transition: 1s; }
+
+.info {
+  grid-area: info; }
+
+.sectionDatos {
+  width: 100%;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 25px;
+  margin-bottom: 1px;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.87);
+  padding-bottom: 15px;
+  padding-top: 15px; }
+
+.tel {
+  font-size: 40px;
+  text-decoration: underline rgba(255, 0, 0, 0.219);
+  margin-bottom: 5px; }
+
+.redesC {
+  grid-area: redesC;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.87);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 1rem; }
+
+.redesCont {
+  font-size: 40px;
+  text-decoration: underline rgba(255, 0, 0, 0.219);
+  margin-bottom: 5px; }
+
+.redesC a {
+  margin: 15px; }
+
+.formu {
+  grid-area: formu; }
+
+.formT {
+  width: 100%;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.219); }
+
+.contForm {
+  display: flex;
+  justify-content: center; }
+
+.formCont {
+  width: 50%;
+  margin-bottom: 20px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.87);
+  text-align: center; }
+
+.legendF {
+  color: white;
+  font-size: 30px;
+  text-decoration: underline rgba(255, 0, 0, 0.219);
+  text-align: center; }
+
+.ayuda {
+  text-decoration: underline solid rgba(255, 0, 0, 0.219); }
+
+.footerC {
+  grid-area: footerC;
+  padding: 10px;
+  font-size: 12px; }
+
+/* media queries page contactanos- version movil  */
+@media only screen and (max-width: 600px) {
+  .bodyP {
+    background-image: url(../img/fondo4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .bodyContactanos {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "headerC headerC" "info info" "redesC redesC" "formu formu" "formu formu" "footerC footerC"; }
+  .tPage {
+    font-size: 22px; }
+  .logoHome {
+    width: 60px; }
+  .menu2 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px 0px 5px 0px; }
+  .menu2 li {
+    font-size: 18px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 5px 0px 0px 2px; }
+  .info h2 {
+    font-size: 30px;
+    padding-bottom: 5px;
+    margin-bottom: 5px; }
+  .sectionDatos {
     font-size: 20px;
-    padding: 10px 1px 10px 1px;
-    margin-bottom: 20px;
-}
-
-.tHistoria{
-    font-family: 'Bebas Neue', cursive;
-    text-align: center;
-    font-size: 35px;
-    text-decoration: underline rgba(255, 0, 0, 0.219);
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px; }
+  .tel {
+    font-size: 30px; }
+  .redesC {
     padding-top: 5px;
-}
+    padding-bottom: 5px;
+    margin-top: 5px; }
+  .redesCont {
+    font-size: 30px;
+    margin-bottom: 5px; }
+  .redesC a {
+    margin: 10px; }
+  .formT {
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .contForm {
+    display: flex;
+    justify-content: center; }
+  .formCont {
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 20px; }
+  .legendF {
+    font-size: 25px; } }
 
-.equipo{
-    grid-area: equipo;
-    text-align: center;
-    padding: 20px;
-}
+/* ---------- Sobre nosotros---------- */
+.bodySn {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "headerSn headerSn headerSn" "mainSn mainSn mainSn" "mainSn mainSn mainSn" "equipo equipo equipo" "equipo equipo equipo" "equipo equipo equipo" "footerSn footerSn footerSn"; }
 
-.img{
-    width: 400px;
-    border: solid rgba(0, 0, 0, 0.87) 5px;
-}
+.headerSn {
+  grid-area: headerSn;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.219), black, rgba(255, 0, 0, 0.219)); }
 
-.footerSn{
-    grid-area: footerSn;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    padding: 10px;
-}
+.headerSn nav ul li a {
+  text-decoration: none;
+  font-family: 'Bebas Neue', cursive;
+  color: white; }
+
+.headerSn nav ul li a:hover {
+  text-decoration: none;
+  font-family: 'Bebas Neue', cursive;
+  color: red; }
+
+.headerSn nav ul li:hover {
+  transform: scale(1.1);
+  transition: 1s; }
+
+.mainSn {
+  grid-area: mainSn; }
+
+.historia {
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.87);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 10px 1px 10px 1px;
+  margin-bottom: 20px; }
+
+.tHistoria {
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  font-size: 35px;
+  text-decoration: underline rgba(255, 0, 0, 0.219);
+  padding-top: 5px; }
+
+.equipo {
+  grid-area: equipo;
+  text-align: center;
+  padding: 20px; }
+
+.img {
+  width: 400px;
+  border: solid rgba(0, 0, 0, 0.87) 5px; }
+
+.footerSn {
+  grid-area: footerSn;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  padding: 10px; }
 
 /* media querie- version mobile de page sobre nosotros */
-
-@media only screen and (max-width:600px){
-    .bodySn{
-        height: 100vh;
-        display: grid;
-    
-        grid-template-areas:"headerSn headerSn"
-                            "mainSn mainSn"
-                            "mainSn mainSn"
-                            "equipo equipo"
-                            "equipo equipo"
-                            "equipo equipo"
-                            "footerSn footerSn";
-    }
-
-    
-    .historia{
-        margin-top: 5px;
-        font-size: 15px;
-        padding: 5px 1px 5px 1px;
-        margin-bottom: 10px;
-    }
-    
-    .tHistoria{
-        font-size: 20px;
-    }
-    
-    .equipo{
-        grid-area: equipo;
-        text-align: center;
-        padding: 5px;
-    }
-    
-    .img{
-        width: 190px;
-    }
-}
+@media only screen and (max-width: 600px) {
+  .bodySn {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "headerSn headerSn" "mainSn mainSn" "mainSn mainSn" "equipo equipo" "equipo equipo" "equipo equipo" "footerSn footerSn"; }
+  .historia {
+    margin-top: 5px;
+    font-size: 15px;
+    padding: 5px 1px 5px 1px;
+    margin-bottom: 10px; }
+  .tHistoria {
+    font-size: 20px; }
+  .equipo {
+    grid-area: equipo;
+    text-align: center;
+    padding: 5px; }
+  .img {
+    width: 190px; } }
 
 /* -------------- galeria---------- */
+.img3 {
+  width: 230px;
+  border: solid rgba(0, 0, 0, 0.87) 5px; }
 
-.img3{
-    width: 230px;
-    border: solid rgba(0, 0, 0, 0.87) 5px
-}
+.img2 {
+  width: 400px;
+  border: solid rgba(0, 0, 0, 0.87) 5px; }
 
-.img2{
-    width: 400px;
-    border: solid rgba(0, 0, 0, 0.87) 5px
-}
-
-.footG{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px ;
-    text-align: right;
-    position: relative;
-    }
+.footG {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  text-align: right;
+  position: relative; }

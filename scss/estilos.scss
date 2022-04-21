@@ -1,0 +1,657 @@
+// importo las variables
+@import "utilities/variables";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+// index
+
+body{
+    background-image: url(../img/fondo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.bodyIndex{
+    height: 100vh;
+    display: grid;
+    
+    grid-template-areas:"header header header"
+                        "sectionM sectionM sectionM"
+                        "sectionF redes sectionV"
+                        "sectionF redes sectionV"
+                        "footer footer footer";
+
+                        .headerI{
+                            grid-area: header;
+                            background-image: linear-gradient(to right, $colorR, black, $colorR);
+                            padding-bottom: 10px;
+                            div{
+                                img{
+                                    width: 150px;
+                                    border-radius: 50%;
+                                    border: 5px solid $colorN;
+                                }
+                                h1{
+                                    margin-top: -8rem;
+                                    text-align: center;
+                                    font-family: 'Anton', sans-serif;
+                                    font-size: 60px;
+                                    color: white;
+                                }
+                                h2{
+                                    text-align: center;
+                                    margin-bottom: 20px;
+                                    font-family: 'Bebas Neue', cursive;
+                                    font-size: 35px;
+                                    color: white;
+                                }
+                            }
+                        }
+                        
+                        .sectionM{
+                            grid-area: sectionM;
+                                nav{
+                                    text-align: center;
+                                    background-image: linear-gradient(to right, $colorR, black, $colorR);
+                                    margin-bottom: 20px;
+                                    margin-top: 20px;
+                                    ul{
+                                        li{
+                                            display: inline-block;
+                                            background-color: $colorR;
+                                            font-size: 30px;
+                                            padding: 5px;
+                                            padding-left: 20px;
+                                            padding-right: 20px;
+                                            margin: 10px 50px;
+                                            border: 1px white solid;
+                                            &:hover{
+                                                transform: scale(1.1);
+                                                transition: 1s;
+                                            }
+                                            a{
+                                                text-decoration: none;
+                                                font-family: 'Bebas Neue', cursive; 
+                                                color: white;
+                                                &:hover{
+                                                    text-decoration: none;
+                                                    font-family: 'Bebas Neue', cursive; 
+                                                    color:red;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                        }
+                        
+                        @keyframes latir{
+                            from{
+                                transform: scale(1);
+                            }
+                            to{
+                                transform: scale(1.01)
+                            }
+                        }
+                        
+                        .sectionF{
+                            grid-area: sectionF;
+                            display: flex;
+                            justify-content: flex-start;
+                            margin-left: 20px;
+                            p{
+                                display: flex;
+                                flex-direction: column;
+                                font-size: 30px;
+                                color: white;
+                                font-family: 'Anton', sans-serif;
+                                margin-left: 60px;
+                                margin-top: 30px;
+                                animation-name: latir;
+                                animation-iteration-count: infinite;
+                                animation-duration: 2s;
+                                span{
+                                    color: red;
+                                }
+                            }
+                        }
+                        
+                        .sectionV{
+                            grid-area: sectionV;
+                            display: flex;
+                            justify-content: end;
+                            video{
+                                width: 300px ;
+                                border:solid 5px $colorR;
+                                margin-right: 100px;
+                            }
+                        }
+                        
+                        .sectionR{
+                            grid-area: redes;
+                            .redes{
+                                padding: 5px;
+                                font-family: 'Bebas Neue', cursive; 
+                                font-size: 30px;
+                                color: white;
+                                display: flex;
+                                justify-content: center;
+                                margin-top: 60px;
+                                text-align: center;
+                                h3{
+                                    background-color: $colorR;
+                                    padding-left: 30px;
+                                    padding-right: 30px;
+                                    border: 1px white solid;
+                                } 
+                            }
+                            .redes2{
+                                text-align: center;
+                                margin-bottom: 15px;
+                                margin-top: 30px;
+                                a{
+                                    margin: 10px;
+                                }
+                                img{
+                                    width: 55px;
+                                    border-radius: 50%;
+                                    &:hover{
+                                        width: 55px;
+                                        border-radius: 50%;
+                                        border: 3px red solid;
+                                        transform: scale(1.3);
+                                        transition: 300ms ease;
+                                    }
+                                }
+                            }
+                        }
+                        
+                        .footerI{
+                            grid-area: footer;
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: end;
+                            h4{
+                                color: white;
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 15px ;
+                                margin-right: 5px;  
+                            }
+                        }
+}
+
+// import el archivo scss que contiene la media querie del index 
+@import "utilities/MQIndex";
+
+/* ------------------actividades ------------------ */
+
+.bodyP{
+    background-image: url(../img/fondoNegro.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    grid-template-areas:"headerA headerA headerA"
+                        "headerA headerA headerA"
+                        "mainA mainA mainA"
+                        "mainA mainA mainA"
+                        "mainA mainA mainA"
+                        "mainA mainA mainA"
+                        "footerA fotterA footerA";
+
+    .headerA{
+        grid-area: headerA;
+        background-image: linear-gradient(to right, $colorR, black, $colorR); 
+        padding-bottom: 5px;
+        img{
+            width: 100px;
+            border-radius: 50%;
+            border: 5px solid $colorN;
+        }
+        h1{
+            font-family: 'Bebas Neue', cursive;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            margin-top: -2rem;
+        }
+        nav{
+            text-align: center;
+            background-color: $colorN;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            ul{
+                li{
+                    display: inline-block;
+                    background-color: $colorR;
+                    font-size: 30px;
+                    padding: 5px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    margin: 10px 50px;
+                    border: 1px white solid;
+                    &:hover{
+                        transform: scale(1.1);
+                        transition: 1s;
+                    }
+                    a{
+                        text-decoration: none;
+                        font-family: 'Bebas Neue', cursive; 
+                        color: white;
+                        &:hover{
+                            text-decoration: none;
+                            font-family: 'Bebas Neue', cursive; 
+                            color:red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        grid-area: mainA;
+        h2{
+            margin-bottom: 20px;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 60px;
+            color: white;
+            text-align: center;
+            background-color: $colorN;
+        }
+        div{
+            table{
+                font-family: 'Bebas Neue', cursive;
+                font-size: 30px;
+                margin-bottom: 1px;
+                color: white;
+            }
+            tbody{
+                th, td{
+                    width: 50%;
+                }
+            }
+        }
+    }
+    footer{
+        grid-area: footerA;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 2rem;
+        background-color: $colorN;
+        h2{
+            padding: 10px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px ; 
+        }
+    }
+}
+
+ 
+/* -------------------------- contactanos---------- */
+
+.bodyContactanos{
+    height: 100vh;
+    display: grid;
+    
+    grid-template-areas:"headerC headerC headerC"
+                        "info info info"
+                        "info info info"
+                        "redesC redesC redesC"
+                        "formu formu formu"
+                        "formu formu formu"
+                        "formu formu formu"
+                        "footerC footerC footerC";
+}
+
+.headerC{
+    grid-area: headerC;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.219), black, rgba(255, 0, 0, 0.219));
+}
+
+.headerC nav ul li a{
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive; 
+    color: white;
+}
+
+.headerC nav ul li a:hover{
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive; 
+    color:red;
+}
+
+.headerC nav ul li:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.info{
+    grid-area: info;
+}
+
+.sectionDatos{
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    margin-bottom: 1px;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.87);
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.tel{
+    font-size: 40px;
+    text-decoration:underline rgba(255, 0, 0, 0.219);
+    margin-bottom: 5px;
+}
+
+.redesC{
+    grid-area: redesC;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.87);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 1rem;
+}
+
+.redesCont{
+    font-size: 40px;
+    text-decoration:underline rgba(255, 0, 0, 0.219);
+    margin-bottom: 5px;
+}
+
+.redesC a{
+    margin: 15px;
+}
+
+.formu{
+    grid-area: formu;
+}
+
+.formT{
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.219);
+}
+
+.contForm{
+    display: flex;
+    justify-content: center;
+}
+
+.formCont{
+    width: 50%;
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.87);
+    text-align: center;
+}
+
+.legendF{
+    color: white;
+    font-size: 30px;
+    text-decoration: underline rgba(255, 0, 0, 0.219);
+    text-align: center;
+}
+
+.ayuda{
+    text-decoration: underline solid rgba(255, 0, 0, 0.219);
+}
+
+.footerC{
+    grid-area: footerC;
+    padding: 10px;
+    font-size: 12px;
+}
+
+/* media queries page contactanos- version movil  */
+
+@media only screen and (max-width:600px){
+    .bodyP{
+        background-image: url(../img/fondo4.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .bodyContactanos{
+        height: 100vh;
+        display: grid;
+
+        grid-template-areas:"headerC headerC"
+                            "info info"
+                            "redesC redesC"
+                            "formu formu"
+                            "formu formu"
+                            "footerC footerC";
+    }
+    
+    
+    .tPage{
+        font-size: 22px;
+    }
+    
+    .logoHome{
+        width: 60px;
+    }
+
+    .menu2{
+        margin-bottom: 5px;
+        margin-top: 5px;
+        padding: 5px 0px 5px 0px;
+    }
+    
+    .menu2 li{
+        font-size: 18px;
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 5px 0px 0px 2px;
+    }
+
+    .info h2{
+        font-size: 30px;
+        padding-bottom: 5px;        
+        margin-bottom: 5px;
+    }
+
+    .sectionDatos{
+        font-size: 20px;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    
+    .tel{
+        font-size: 30px;
+    }
+    
+    .redesC{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 5px;
+    }
+    
+    .redesCont{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    
+    .redesC a{
+        margin: 10px;
+    }
+    
+    .formT{
+        font-size: 25px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .contForm{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .formCont{
+        width: 100%;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    
+    .legendF{
+        font-size: 25px;
+    }
+
+}
+
+
+/* ---------- Sobre nosotros---------- */
+
+.bodySn{
+    height: 100vh;
+    display: grid;
+
+    grid-template-areas:"headerSn headerSn headerSn"
+                        "mainSn mainSn mainSn"
+                        "mainSn mainSn mainSn"
+                        "equipo equipo equipo"
+                        "equipo equipo equipo"
+                        "equipo equipo equipo"
+                        "footerSn footerSn footerSn";
+}
+
+.headerSn{
+    grid-area: headerSn;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.219), black, rgba(255, 0, 0, 0.219));
+}
+
+.headerSn nav ul li a{
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive; 
+    color: white;
+}
+
+.headerSn nav ul li a:hover{
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive; 
+    color:red;
+}
+
+.headerSn nav ul li:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.mainSn{
+    grid-area: mainSn;
+}
+
+.historia{
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px 1px 10px 1px;
+    margin-bottom: 20px;
+}
+
+.tHistoria{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline rgba(255, 0, 0, 0.219);
+    padding-top: 5px;
+}
+
+.equipo{
+    grid-area: equipo;
+    text-align: center;
+    padding: 20px;
+}
+
+.img{
+    width: 400px;
+    border: solid rgba(0, 0, 0, 0.87) 5px;
+}
+
+.footerSn{
+    grid-area: footerSn;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    padding: 10px;
+}
+
+/* media querie- version mobile de page sobre nosotros */
+
+@media only screen and (max-width:600px){
+    .bodySn{
+        height: 100vh;
+        display: grid;
+    
+        grid-template-areas:"headerSn headerSn"
+                            "mainSn mainSn"
+                            "mainSn mainSn"
+                            "equipo equipo"
+                            "equipo equipo"
+                            "equipo equipo"
+                            "footerSn footerSn";
+    }
+
+    
+    .historia{
+        margin-top: 5px;
+        font-size: 15px;
+        padding: 5px 1px 5px 1px;
+        margin-bottom: 10px;
+    }
+    
+    .tHistoria{
+        font-size: 20px;
+    }
+    
+    .equipo{
+        grid-area: equipo;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .img{
+        width: 190px;
+    }
+}
+
+/* -------------- galeria---------- */
+
+.img3{
+    width: 230px;
+    border: solid rgba(0, 0, 0, 0.87) 5px
+}
+
+.img2{
+    width: 400px;
+    border: solid rgba(0, 0, 0, 0.87) 5px
+}
+
+.footG{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px ;
+    text-align: right;
+    position: relative;
+    }
