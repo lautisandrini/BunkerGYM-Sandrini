@@ -32,7 +32,7 @@ body{
                     border-radius: 50%;
                     border: 5px solid $colorN;
                 }
-                #navbarNav{
+                #navbarSupportedContent{
                     ul{
                         li{
                             background-color: $colorR;
@@ -171,6 +171,7 @@ body{
         display: flex;
         align-items: flex-end;
         justify-content: end;
+        background-color: $colorN;
         h4{
             color: white;
             text-shadow: 2px 2px $colorR;
@@ -209,7 +210,7 @@ body{
                     border-radius: 50%;
                     border: 5px solid $colorN;
                 }
-                #navbarNav{
+                #navbarSupportedContent{
                     ul{
                         li{
                             background-color: $colorR;
@@ -402,7 +403,7 @@ body{
                     border-radius: 50%;
                     border: 5px solid $colorN;
                 }
-                #navbarNav{
+                #navbarSupportedContent{
                     ul{
                         li{
                             background-color: $colorR;
@@ -512,7 +513,7 @@ body{
                     border-radius: 50%;
                     border: 5px solid $colorN;
                 }
-                #navbarNav{
+                #navbarSupportedContent{
                     ul{
                         li{
                             background-color: $colorR;
@@ -624,7 +625,7 @@ body{
                     border-radius: 50%;
                     border: 5px solid $colorN;
                 }
-                #navbarNav{
+                #navbarSupportedContent{
                     ul{
                         li{
                             background-color: $colorR;
