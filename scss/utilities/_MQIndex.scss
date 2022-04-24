@@ -10,15 +10,14 @@
 .bodyIndex{
         height: 100vh;
         display: grid;
-        grid-template-areas:"header header"
-                            "sectionM sectionF"
-                            "sectionM sectionF"
-                            "sectionM sectionV"
-                            "sectionM sectionV"
+        grid-template-areas:"headerI headerI"
+                            "sectionM sectionM"
+                            "sectionF sectionV"
+                            "sectionF sectionV"
                             "redes redes"
                             "footer footer";
     .headerI{
-        grid-area: header;
+        grid-area: headerI;
         padding-bottom: 10px;
             div{
                 img{
