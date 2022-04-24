@@ -12,11 +12,7 @@ body {
 .bodyIndex {
   height: 100vh;
   display: grid;
-  grid-template-areas: "header header header"
- "sectionM sectionM sectionM"
- "sectionF redes sectionV"
- "sectionF redes sectionV"
- "footer footer footer"; }
+  grid-template-areas: "header header header" "sectionM sectionM sectionM" "sectionF redes sectionV" "sectionF redes sectionV" "footer footer footer"; }
   .bodyIndex .headerI {
     grid-area: header;
     background-image: linear-gradient(to right, rgba(255, 0, 0, 0.219), black, rgba(255, 0, 0, 0.219));
@@ -145,7 +141,7 @@ body {
       font-size: 15px;
       margin-right: 5px; }
 
-/* index version mobile del index*/
+/* index version mobile */
 @media only screen and (min-width: 320px) and (max-width: 599px) {
   body {
     background-image: url(../img/fondo4.jpg);
@@ -154,13 +150,7 @@ body {
   .bodyIndex {
     height: 100vh;
     display: grid;
-    grid-template-areas: "header header"
- "sectionM sectionF"
- "sectionM sectionF"
- "sectionM sectionV"
- "sectionM sectionV"
- "redes redes"
- "footer footer"; }
+    grid-template-areas: "header header" "sectionM sectionF" "sectionM sectionF" "sectionM sectionV" "sectionM sectionV" "redes redes" "footer footer"; }
     .bodyIndex .headerI {
       grid-area: header;
       padding-bottom: 10px; }
@@ -209,19 +199,12 @@ body {
   background-image: url(../img/fondoNegro.jpg);
   background-size: cover;
   background-repeat: repeat;
-  grid-template-areas: "headerC headerC headerC"
- "info info info"
- "info info info"
- "redesC redesC redesC"
- "formu formu formu"
- "formu formu formu"
- "formu formu formu"
- "footerC footerC footerC"; }
+  grid-template-areas: "headerC headerC headerC" "info info info" "info info info" "redesC redesC redesC" "formu formu formu" "formu formu formu" "formu formu formu" "footerC footerC footerC"; }
   .bodyC .headerC {
     grid-area: headerC;
     background-image: linear-gradient(to right, rgba(255, 0, 0, 0.219), black, rgba(255, 0, 0, 0.219)); }
     .bodyC .headerC div img {
-      width: 100px;
+      width: 125px;
       border-radius: 50%;
       border: 5px solid rgba(0, 0, 0, 0.87); }
     .bodyC .headerC div h1 {
@@ -357,18 +340,12 @@ body {
   background-image: url(../img/fondoNegro.jpg);
   background-size: cover;
   background-repeat: repeat;
-  grid-template-areas: "headerSn headerSn headerSn"
- "mainSn mainSn mainSn"
- "mainSn mainSn mainSn"
- "equipo equipo equipo"
- "equipo equipo equipo"
- "equipo equipo equipo"
- "footerSn footerSn footerSn"; }
+  grid-template-areas: "headerSn headerSn headerSn" "mainSn mainSn mainSn" "mainSn mainSn mainSn" "equipo equipo equipo" "equipo equipo equipo" "equipo equipo equipo" "footerSn footerSn footerSn"; }
   .bodySn .headerSn {
     grid-area: headerSn;
     background-image: linear-gradient(to right, rgba(255, 0, 0, 0.219), black, rgba(255, 0, 0, 0.219)); }
     .bodySn .headerSn img {
-      width: 100px;
+      width: 125px;
       border-radius: 50%;
       border: 5px solid rgba(0, 0, 0, 0.87); }
     .bodySn .headerSn h1 {
@@ -445,19 +422,13 @@ body {
   background-image: url(../img/fondoNegro.jpg);
   background-size: cover;
   background-repeat: repeat;
-  grid-template-areas: "headerA headerA headerA"
- "headerA headerA headerA"
- "mainA mainA mainA"
- "mainA mainA mainA"
- "mainA mainA mainA"
- "mainA mainA mainA"
- "footerA footerA footerA"; }
+  grid-template-areas: "headerA headerA headerA" "headerA headerA headerA" "mainA mainA mainA" "mainA mainA mainA" "mainA mainA mainA" "mainA mainA mainA" "footerA footerA footerA"; }
   .bodyA .headerA {
     grid-area: headerA;
     background-image: linear-gradient(to right, rgba(255, 0, 0, 0.219), black, rgba(255, 0, 0, 0.219));
     padding-bottom: 5px; }
     .bodyA .headerA img {
-      width: 100px;
+      width: 125px;
       border-radius: 50%;
       border: 5px solid rgba(0, 0, 0, 0.87); }
     .bodyA .headerA h1 {
@@ -527,19 +498,13 @@ body {
   background-image: url(../img/fondoNegro.jpg);
   background-size: cover;
   background-repeat: repeat;
-  grid-template-areas: "headerG headerG headerG"
- "headerG headerG headerG"
- "mainG mainG mainG"
- "mainG mainG mainG"
- "mainG mainG mainG"
- "mainG mainG mainG"
- "footerG footerG footerG"; }
+  grid-template-areas: "headerG headerG headerG" "headerG headerG headerG" "mainG mainG mainG" "mainG mainG mainG" "mainG mainG mainG" "mainG mainG mainG" "footerG footerG footerG"; }
   .bodyG .headerG {
     grid-area: headerA;
     background-image: linear-gradient(to right, rgba(255, 0, 0, 0.219), black, rgba(255, 0, 0, 0.219));
     padding-bottom: 5px; }
     .bodyG .headerG img {
-      width: 100px;
+      width: 125px;
       border-radius: 50%;
       border: 5px solid rgba(0, 0, 0, 0.87); }
     .bodyG .headerG h1 {

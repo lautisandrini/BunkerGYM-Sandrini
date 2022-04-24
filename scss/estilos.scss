@@ -180,7 +180,7 @@ body{
                         }
 }
 
-/* index version mobile*/ 
+/* index version mobile */ 
 @import "utilities/MQIndex";
 
 /* contactanos*/
@@ -203,7 +203,7 @@ body{
         background-image: linear-gradient(to right, $colorR, black, $colorR);
         div{
             img{
-                width: 100px;
+                width: 125px;
                 border-radius: 50%;
                 border: 5px solid $colorN;
             }
@@ -386,7 +386,7 @@ body{
         grid-area: headerSn;
         background-image: linear-gradient(to right, $colorR, black, $colorR);
         img{
-            width: 100px;
+            width: 125px;
             border-radius: 50%;
             border: 5px solid $colorN;
         }
@@ -493,7 +493,7 @@ body{
         background-image: linear-gradient(to right, $colorR, black, $colorR); 
         padding-bottom: 5px;
         img{
-            width: 100px;
+            width: 125px;
             border-radius: 50%;
             border: 5px solid $colorN;
         }
@@ -596,7 +596,7 @@ body{
         background-image: linear-gradient(to right, $colorR, black, $colorR); 
         padding-bottom: 5px;
         img{
-            width: 100px;
+            width: 125px;
             border-radius: 50%;
             border: 5px solid $colorN;
         }
