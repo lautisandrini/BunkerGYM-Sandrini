@@ -151,7 +151,7 @@ body {
       grid-template-areas: "headerI headerI" "sectionM sectionM" "redes redes" "sectionF sectionV" "sectionF sectionV" "footer footer"; }
       body .bodyIndex .headerI nav {
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.87));
-        margin-bottom: 0.3rem; }
+        margin-bottom: 2rem; }
         body .bodyIndex .headerI nav div img {
           width: 100px; }
         body .bodyIndex .headerI nav div #navbarSupportedContent ul li {
@@ -172,9 +172,41 @@ body {
       body .bodyIndex .sectionF {
         margin-left: 0.2rem; }
         body .bodyIndex .sectionF p {
-          font-size: 35px;
+          font-size: 30px;
           margin-left: 1rem;
-          margin-top: 1rem; } }
+          margin-right: 4rem;
+          margin-top: 6rem; }
+      body .bodyIndex .sectionV {
+        align-items: center; }
+        body .bodyIndex .sectionV video {
+          margin-right: 3rem;
+          margin-top: 1rem; }
+      body .bodyIndex .sectionR .redes {
+        margin-top: 4rem;
+        text-align: center; }
+        body .bodyIndex .sectionR .redes h3 {
+          font-size: 45px;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          padding-left: 2rem;
+          padding-right: 2rem; }
+      body .bodyIndex .sectionR .redes2 {
+        text-align: center;
+        margin-bottom: 0.5rem;
+        margin-top: 3rem; }
+        body .bodyIndex .sectionR .redes2 a {
+          margin: 1rem; }
+        body .bodyIndex .sectionR .redes2 img {
+          width: 75px; }
+      body .bodyIndex footer {
+        align-items: flex-end;
+        justify-content: end;
+        background-color: rgba(0, 0, 0, 0.87);
+        margin-top: 5rem; }
+        body .bodyIndex footer h4 {
+          text-shadow: 1px 1px rgba(255, 0, 0, 0.219);
+          font-size: 15px;
+          margin-right: 0.5rem; } }
 
 /* contactanos*/
 .bodyC {
