@@ -2,9 +2,6 @@
 
 @media only screen and (max-width:600px){
         .bodyIndex{
-            height: 100vh;
-            background-image: url(../../img/fondoNegro.jpg);
-            display: grid;
             grid-template-areas:"headerI headerI"
                                 "sectionM sectionM"
                                 "redes redes"

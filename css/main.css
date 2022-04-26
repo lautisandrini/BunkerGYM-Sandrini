@@ -139,9 +139,6 @@
 /* index version mobile */
 @media only screen and (max-width: 600px) {
   .bodyIndex {
-    height: 100vh;
-    background-image: url(../../img/fondoNegro.jpg);
-    display: grid;
     grid-template-areas: "headerI headerI" "sectionM sectionM" "redes redes" "sectionF sectionV" "sectionF sectionV" "footer footer"; }
     .bodyIndex .headerI nav {
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.87));
