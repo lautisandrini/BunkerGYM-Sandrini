@@ -141,8 +141,6 @@
   .bodyIndex {
     height: 100vh;
     background-image: url(../../img/fondoNegro.jpg);
-    background-size: cover;
-    background-repeat: repeat;
     display: grid;
     grid-template-areas: "headerI headerI" "sectionM sectionM" "redes redes" "sectionF sectionV" "sectionF sectionV" "footer footer"; }
     .bodyIndex .headerI nav {
