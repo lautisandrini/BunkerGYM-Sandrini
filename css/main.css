@@ -332,8 +332,9 @@ body {
           text-align: center; }
         .bodyC .formu .contForm form fieldset div {
           margin-top: 0.6rem; }
-        .bodyC .formu .contForm form fieldset .ayuda div {
-          display: none; }
+        .bodyC .formu .contForm form fieldset .ayuda div label {
+          font-size: 25px;
+          text-decoration: underline 1px rgba(255, 0, 0, 0.219); }
   .bodyC footer {
     grid-area: footerC;
     display: flex;
@@ -416,8 +417,8 @@ body {
       font-size: 22px; }
       .bodyC .formu .contForm form fieldset div {
         margin-top: 0.7rem; }
-      .bodyC .formu .contForm form fieldset .ayuda div label {
-        font-size: 22px; }
+      .bodyC .formu .contForm form fieldset .ayuda {
+        display: none; }
     .bodyC footer {
       margin-top: 1rem; }
       .bodyC footer h4 {

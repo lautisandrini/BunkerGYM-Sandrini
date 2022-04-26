@@ -352,7 +352,10 @@ body{
                     }
                     .ayuda{
                         div{
-                            display: none;
+                            label{
+                                font-size: 25px;
+                                text-decoration: underline 1px $colorR;
+                            }
                         }
                     }  
                 }
