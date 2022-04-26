@@ -8,13 +8,11 @@
 }
 
 /* index */
-body{
-    background-image: url(../img/fondo2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; 
-}
 .bodyIndex{
     height: 100vh;
+    background-image: url(../img/fondoNegro.jpg);
+    background-size: cover;
+    background-repeat: repeat; 
     display: grid;
     grid-template-areas:"headerI headerI headerI"
                         "sectionM sectionM sectionM"
@@ -36,11 +34,10 @@ body{
                     ul{
                         li{
                             background-color: $colorR;
-                            font-size: 30px;
-                            padding-left: 1rem;
-                            padding-right: 1rem;
-                            margin-right: 2rem;
-                            margin-left: 3rem;
+                            font-size: 25px;
+                            padding-left: 0.5rem;
+                            padding-right: 0.5rem;
+                            margin-left: 1.5rem;
                             border: 1px white solid;
                             &:hover{
                                 transform: scale(1.1);
@@ -214,11 +211,10 @@ body{
                     ul{
                         li{
                             background-color: $colorR;
-                            font-size: 30px;
-                            padding-left: 1rem;
-                            padding-right: 1rem;
-                            margin-right: 2rem;
-                            margin-left: 3rem;
+                            font-size: 25px;
+                            padding-left: 0.5rem;
+                            padding-right: 0.5rem;
+                            margin-left: 1.5rem;
                             border: 1px white solid;
                             &:hover{
                                 transform: scale(1.1);
@@ -408,11 +404,10 @@ body{
                     ul{
                         li{
                             background-color: $colorR;
-                            font-size: 30px;
-                            padding-left: 1rem;
-                            padding-right: 1rem;
-                            margin-right: 2rem;
-                            margin-left: 3rem;
+                            font-size: 25px;
+                            padding-left: 0.5rem;
+                            padding-right: 0.5rem;
+                            margin-left: 1.5rem;
                             border: 1px white solid;
                             &:hover{
                                 transform: scale(1.1);
@@ -518,11 +513,10 @@ body{
                     ul{
                         li{
                             background-color: $colorR;
-                            font-size: 30px;
-                            padding-left: 1rem;
-                            padding-right: 1rem;
-                            margin-right: 2rem;
-                            margin-left: 3rem;
+                            font-size: 25px;
+                            padding-left: 0.5rem;
+                            padding-right: 0.5rem;
+                            margin-left: 1.5rem;
                             border: 1px white solid;
                             &:hover{
                                 transform: scale(1.1);
@@ -630,11 +624,10 @@ body{
                     ul{
                         li{
                             background-color: $colorR;
-                            font-size: 30px;
-                            padding-left: 1rem;
-                            padding-right: 1rem;
-                            margin-right: 2rem;
-                            margin-left: 3rem;
+                            font-size: 25px;
+                            padding-left: 0.5rem;
+                            padding-right: 0.5rem;
+                            margin-left: 1.5rem;
                             border: 1px white solid;
                             &:hover{
                                 transform: scale(1.1);

@@ -4,13 +4,11 @@
   box-sizing: border-box; }
 
 /* index */
-body {
-  background-image: url(../img/fondo2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat; }
-
 .bodyIndex {
   height: 100vh;
+  background-image: url(../img/fondoNegro.jpg);
+  background-size: cover;
+  background-repeat: repeat;
   display: grid;
   grid-template-areas: "headerI headerI headerI" "sectionM sectionM sectionM" "sectionF redes sectionV" "sectionF redes sectionV" "footer footer footer"; }
   .bodyIndex .headerI {
@@ -24,11 +22,10 @@ body {
         border: 5px solid rgba(0, 0, 0, 0.87); }
       .bodyIndex .headerI nav div #navbarSupportedContent ul li {
         background-color: rgba(255, 0, 0, 0.219);
-        font-size: 30px;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        margin-right: 2rem;
-        margin-left: 3rem;
+        font-size: 25px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin-left: 1.5rem;
         border: 1px white solid; }
         .bodyIndex .headerI nav div #navbarSupportedContent ul li:hover {
           transform: scale(1.1);
@@ -141,72 +138,71 @@ body {
 
 /* index version mobile */
 @media only screen and (max-width: 600px) {
-  body {
+  .bodyIndex {
+    height: 100vh;
     background-image: url(../../img/fondoNegro.jpg);
     background-size: cover;
-    background-repeat: repeat; }
-    body .bodyIndex {
-      height: 100vh;
-      display: grid;
-      grid-template-areas: "headerI headerI" "sectionM sectionM" "redes redes" "sectionF sectionV" "sectionF sectionV" "footer footer"; }
-      body .bodyIndex .headerI nav {
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.87));
-        margin-bottom: 2rem; }
-        body .bodyIndex .headerI nav div img {
-          width: 100px; }
-        body .bodyIndex .headerI nav div #navbarSupportedContent ul li {
-          text-align: start;
-          background-color: rgba(2, 2, 2, 0);
-          font-size: 25px;
-          padding-left: 0rem;
-          padding-right: 0rem;
-          margin-right: 0rem;
-          margin-left: 1.5rem;
-          border: none; }
-        body .bodyIndex .headerI nav div #navbarSupportedContent ul a {
-          text-shadow: 2px 2px rgba(255, 0, 0, 0.219); }
-      body .bodyIndex .sectionM {
-        padding-bottom: 0.5rem; }
-        body .bodyIndex .sectionM div h2 {
-          margin-bottom: 1rem; }
-      body .bodyIndex .sectionF {
-        margin-left: 0.2rem; }
-        body .bodyIndex .sectionF p {
-          font-size: 30px;
-          margin-left: 1rem;
-          margin-right: 4rem;
-          margin-top: 6rem; }
-      body .bodyIndex .sectionV {
-        align-items: center; }
-        body .bodyIndex .sectionV video {
-          margin-right: 3rem;
-          margin-top: 1rem; }
-      body .bodyIndex .sectionR .redes {
-        margin-top: 4rem;
-        text-align: center; }
-        body .bodyIndex .sectionR .redes h3 {
-          font-size: 45px;
-          padding-top: 1rem;
-          padding-bottom: 1rem;
-          padding-left: 2rem;
-          padding-right: 2rem; }
-      body .bodyIndex .sectionR .redes2 {
-        text-align: center;
-        margin-bottom: 0.5rem;
-        margin-top: 3rem; }
-        body .bodyIndex .sectionR .redes2 a {
-          margin: 1.5rem; }
-        body .bodyIndex .sectionR .redes2 img {
-          width: 75px; }
-      body .bodyIndex footer {
-        align-items: flex-end;
-        justify-content: end;
-        background-color: rgba(0, 0, 0, 0.87);
-        margin-top: 5rem; }
-        body .bodyIndex footer h4 {
-          text-shadow: 1px 1px rgba(255, 0, 0, 0.219);
-          font-size: 15px;
-          margin-right: 0.5rem; } }
+    background-repeat: repeat;
+    display: grid;
+    grid-template-areas: "headerI headerI" "sectionM sectionM" "redes redes" "sectionF sectionV" "sectionF sectionV" "footer footer"; }
+    .bodyIndex .headerI nav {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.87));
+      margin-bottom: 2rem; }
+      .bodyIndex .headerI nav div img {
+        width: 100px; }
+      .bodyIndex .headerI nav div #navbarSupportedContent ul li {
+        text-align: start;
+        background-color: rgba(2, 2, 2, 0);
+        font-size: 25px;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        margin-right: 0rem;
+        margin-left: 1.5rem;
+        border: none; }
+      .bodyIndex .headerI nav div #navbarSupportedContent ul a {
+        text-shadow: 2px 2px rgba(255, 0, 0, 0.219); }
+    .bodyIndex .sectionM {
+      padding-bottom: 0.5rem; }
+      .bodyIndex .sectionM div h2 {
+        margin-bottom: 1rem; }
+    .bodyIndex .sectionF {
+      margin-left: 0.2rem; }
+      .bodyIndex .sectionF p {
+        font-size: 30px;
+        margin-left: 1rem;
+        margin-right: 4rem;
+        margin-top: 6rem; }
+    .bodyIndex .sectionV {
+      align-items: center; }
+      .bodyIndex .sectionV video {
+        margin-right: 3rem;
+        margin-top: 1rem; }
+    .bodyIndex .sectionR .redes {
+      margin-top: 4rem;
+      text-align: center; }
+      .bodyIndex .sectionR .redes h3 {
+        font-size: 45px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem; }
+    .bodyIndex .sectionR .redes2 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+      margin-top: 3rem; }
+      .bodyIndex .sectionR .redes2 a {
+        margin: 1.5rem; }
+      .bodyIndex .sectionR .redes2 img {
+        width: 75px; }
+    .bodyIndex footer {
+      align-items: flex-end;
+      justify-content: end;
+      background-color: rgba(0, 0, 0, 0.87);
+      margin-top: 5rem; }
+      .bodyIndex footer h4 {
+        text-shadow: 1px 1px rgba(255, 0, 0, 0.219);
+        font-size: 15px;
+        margin-right: 0.5rem; } }
 
 /* contactanos*/
 .bodyC {
@@ -225,11 +221,10 @@ body {
       border: 5px solid rgba(0, 0, 0, 0.87); }
     .bodyC .headerC nav div #navbarSupportedContent ul li {
       background-color: rgba(255, 0, 0, 0.219);
-      font-size: 30px;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      margin-right: 2rem;
-      margin-left: 3rem;
+      font-size: 25px;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      margin-left: 1.5rem;
       border: 1px white solid; }
       .bodyC .headerC nav div #navbarSupportedContent ul li:hover {
         transform: scale(1.1);
@@ -442,11 +437,10 @@ body {
       border: 5px solid rgba(0, 0, 0, 0.87); }
     .bodySn .headerSn nav div #navbarSupportedContent ul li {
       background-color: rgba(255, 0, 0, 0.219);
-      font-size: 30px;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      margin-right: 2rem;
-      margin-left: 3rem;
+      font-size: 25px;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      margin-left: 1.5rem;
       border: 1px white solid; }
       .bodySn .headerSn nav div #navbarSupportedContent ul li:hover {
         transform: scale(1.1);
@@ -521,11 +515,10 @@ body {
       border: 5px solid rgba(0, 0, 0, 0.87); }
     .bodyA .headerA nav div #navbarSupportedContent ul li {
       background-color: rgba(255, 0, 0, 0.219);
-      font-size: 30px;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      margin-right: 2rem;
-      margin-left: 3rem;
+      font-size: 25px;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      margin-left: 1.5rem;
       border: 1px white solid; }
       .bodyA .headerA nav div #navbarSupportedContent ul li:hover {
         transform: scale(1.1);
@@ -596,11 +589,10 @@ body {
       border: 5px solid rgba(0, 0, 0, 0.87); }
     .bodyG .headerG nav div #navbarSupportedContent ul li {
       background-color: rgba(255, 0, 0, 0.219);
-      font-size: 30px;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      margin-right: 2rem;
-      margin-left: 3rem;
+      font-size: 25px;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      margin-left: 1.5rem;
       border: 1px white solid; }
       .bodyG .headerG nav div #navbarSupportedContent ul li:hover {
         transform: scale(1.1);

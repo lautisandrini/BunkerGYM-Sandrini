@@ -1,12 +1,11 @@
 // media querie version movile del index
 
 @media only screen and (max-width:600px){
-    body{
-        background-image: url(../../img/fondoNegro.jpg);
-        background-size: cover;
-        background-repeat: repeat;
         .bodyIndex{
             height: 100vh;
+            background-image: url(../../img/fondoNegro.jpg);
+        background-size: cover;
+        background-repeat: repeat;
             display: grid;
             grid-template-areas:"headerI headerI"
                                 "sectionM sectionM"
@@ -104,7 +103,6 @@
             }
         }
     }    
-}
 
     
  
