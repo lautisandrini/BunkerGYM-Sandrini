@@ -275,11 +275,11 @@ body{
             padding-top: 15px;
             div{
                 .tel{
-                    font-size: 35px;
+                    font-size: 40px;
                     text-decoration:underline $colorR;
                     margin-bottom: 5px;
                 }
-                .tel2{
+                h3{
                     font-size: 35px;
                 }
             }
@@ -288,7 +288,6 @@ body{
     .redesC{
         grid-area: redesC;
         font-family: 'Bebas Neue', cursive;
-        font-size: 25px;
         color: white;
         text-align: center;
         background-color: $colorN;
@@ -333,32 +332,29 @@ body{
         .contForm{
             display: flex;
             justify-content: center;
-        }
-        form{
-            width: 50%;
-            margin-bottom: 20px;
-            font-family: 'Bebas Neue', cursive;
-            font-size: 20px;
-            color: white;
-            background-color: $colorN;
-            text-align: center;
-            fieldset{
-                legend{
-                    color: white;
-                    font-size: 30px;
-                    text-decoration: underline $colorR;
-                    text-align: center;
-                }
-                div{
-                    margin-top: 0.6rem;
-                }
-                .ayuda{
-                    div{
-                        label{
-                            font-size: 25px;
-                            text-decoration: underline solid $colorR;
-                        }
+            form{
+                width: 50%;
+                margin-bottom: 20px;
+                font-family: 'Bebas Neue', cursive;
+                font-size: 20px;
+                color: white;
+                background-color: $colorN;
+                text-align: center;
+                fieldset{
+                    legend{
+                        color: white;
+                        font-size: 30px;
+                        text-decoration: underline $colorR;
+                        text-align: center;
                     }
+                    div{
+                        margin-top: 0.6rem;
+                    }
+                    .ayuda{
+                        div{
+                            display: none;
+                        }
+                    }  
                 }
             }
         }
@@ -378,6 +374,8 @@ body{
         }
     }
 }
+/* contactanos version mobile */
+@import "utilities/MQContactanos";
 
 /* Sobre nosotros */
 .bodySn{

@@ -1,0 +1,129 @@
+// media querie version movile de contactanos.html
+
+@media only screen and (max-width:600px){
+    .bodyC{
+        grid-template-areas:"headerC headerC"
+                            "headerC headerC"
+                            "info info"
+                            "info info"
+                            "redesC redesC"
+                            "formu formu"
+                            "formu formu"
+                            "footerC footerC";
+        .headerC{
+            background-image: none;
+            nav{
+                background-image:linear-gradient(to right, $colorN, $colorN);
+                margin-bottom: 2rem;
+                div{
+                    img{
+                        width: 100px;
+                    }
+                    #navbarSupportedContent{
+                        ul{
+                            li{
+                                text-align:start;
+                                background-color: rgba(2, 2, 2, 0);
+                                font-size: 25px;
+                                padding-left: 0rem;
+                                padding-right: 0rem;
+                                margin-right: 0rem;
+                                margin-left: 1.5rem;
+                                border: none;
+                            }
+                            a{
+                                text-shadow: 2px 2px $colorR;
+                            }
+                        }
+                    }
+                }
+            }
+            div{
+                h1{
+                    text-shadow: 2px 2px $colorR;
+                    font-size: 35px;
+                    text-align: center;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;;
+                }
+            }
+        }
+        main{
+            h2{
+                margin-bottom: 1rem;
+                font-size: 50px;
+                text-shadow: 2px 2px $colorR;
+                text-align: center;
+                background-color: $colorN;
+            }
+            .datos{
+                margin-bottom: 0.5rem;
+                padding-bottom: 1rem;
+                padding-top: 1rem;
+                div{
+                    .tel{
+                        font-size: 35px;
+                        margin-bottom: 0.5rem;
+                    }
+                    h3{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+        .redesC{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            h4{
+                margin-bottom: 1rem;
+            }
+            a{
+                margin: 1.5rem;
+            }
+            img{
+                width: 55px;
+            }
+        }
+        .formu{
+            .tituloForm{
+                margin-top: 0.5rem;
+                margin-bottom: 1rem;
+                color: white;
+                padding-top: 1rem;
+                padding-bottom: 0.5rem;
+                h4{
+                    font-size: 30px;
+                    text-shadow: 2px 2px $colorN;
+                }
+            }
+            .contForm{
+                form{
+                    width: 60%;
+                    margin-bottom: 1rem;
+                    font-size: 22px;
+                    fieldset{
+                        div{
+                            margin-top: 0.7rem;
+                        }
+                        .ayuda{
+                            div{
+                                label{
+                                    font-size: 22px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            margin-top: 1rem;
+            h4{
+                padding: 1rem;
+                text-shadow: 1px 1px $colorR;
+            }
+        }                    
+    }
+}

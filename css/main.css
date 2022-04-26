@@ -140,7 +140,7 @@ body {
       margin-right: 5px; }
 
 /* index version mobile */
-@media only screen and (min-width: 320px) and (max-width: 599px) {
+@media only screen and (max-width: 600px) {
   body {
     background-image: url(../../img/fondoNegro.jpg);
     background-size: cover;
@@ -195,7 +195,7 @@ body {
         margin-bottom: 0.5rem;
         margin-top: 3rem; }
         body .bodyIndex .sectionR .redes2 a {
-          margin: 1rem; }
+          margin: 1.5rem; }
         body .bodyIndex .sectionR .redes2 img {
           width: 75px; }
       body .bodyIndex footer {
@@ -272,15 +272,14 @@ body {
       padding-bottom: 15px;
       padding-top: 15px; }
       .bodyC main .datos div .tel {
-        font-size: 35px;
+        font-size: 40px;
         text-decoration: underline rgba(255, 0, 0, 0.219);
         margin-bottom: 5px; }
-      .bodyC main .datos div .tel2 {
+      .bodyC main .datos div h3 {
         font-size: 35px; }
   .bodyC .redesC {
     grid-area: redesC;
     font-family: 'Bebas Neue', cursive;
-    font-size: 25px;
     color: white;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.87);
@@ -318,24 +317,23 @@ body {
     .bodyC .formu .contForm {
       display: flex;
       justify-content: center; }
-    .bodyC .formu form {
-      width: 50%;
-      margin-bottom: 20px;
-      font-family: 'Bebas Neue', cursive;
-      font-size: 20px;
-      color: white;
-      background-color: rgba(0, 0, 0, 0.87);
-      text-align: center; }
-      .bodyC .formu form fieldset legend {
+      .bodyC .formu .contForm form {
+        width: 50%;
+        margin-bottom: 20px;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20px;
         color: white;
-        font-size: 30px;
-        text-decoration: underline rgba(255, 0, 0, 0.219);
+        background-color: rgba(0, 0, 0, 0.87);
         text-align: center; }
-      .bodyC .formu form fieldset div {
-        margin-top: 0.6rem; }
-      .bodyC .formu form fieldset .ayuda div label {
-        font-size: 25px;
-        text-decoration: underline solid rgba(255, 0, 0, 0.219); }
+        .bodyC .formu .contForm form fieldset legend {
+          color: white;
+          font-size: 30px;
+          text-decoration: underline rgba(255, 0, 0, 0.219);
+          text-align: center; }
+        .bodyC .formu .contForm form fieldset div {
+          margin-top: 0.6rem; }
+        .bodyC .formu .contForm form fieldset .ayuda div {
+          display: none; }
   .bodyC footer {
     grid-area: footerC;
     display: flex;
@@ -348,6 +346,83 @@ body {
       text-shadow: 2px 2px rgba(255, 0, 0, 0.219);
       font-family: 'Roboto', sans-serif;
       font-size: 15px; }
+
+/* contactanos version mobile */
+@media only screen and (max-width: 600px) {
+  .bodyC {
+    grid-template-areas: "headerC headerC" "headerC headerC" "info info" "info info" "redesC redesC" "formu formu" "formu formu" "footerC footerC"; }
+    .bodyC .headerC {
+      background-image: none; }
+      .bodyC .headerC nav {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.87));
+        margin-bottom: 2rem; }
+        .bodyC .headerC nav div img {
+          width: 100px; }
+        .bodyC .headerC nav div #navbarSupportedContent ul li {
+          text-align: start;
+          background-color: rgba(2, 2, 2, 0);
+          font-size: 25px;
+          padding-left: 0rem;
+          padding-right: 0rem;
+          margin-right: 0rem;
+          margin-left: 1.5rem;
+          border: none; }
+        .bodyC .headerC nav div #navbarSupportedContent ul a {
+          text-shadow: 2px 2px rgba(255, 0, 0, 0.219); }
+      .bodyC .headerC div h1 {
+        text-shadow: 2px 2px rgba(255, 0, 0, 0.219);
+        font-size: 35px;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem; }
+    .bodyC main h2 {
+      margin-bottom: 1rem;
+      font-size: 50px;
+      text-shadow: 2px 2px rgba(255, 0, 0, 0.219);
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.87); }
+    .bodyC main .datos {
+      margin-bottom: 0.5rem;
+      padding-bottom: 1rem;
+      padding-top: 1rem; }
+      .bodyC main .datos div .tel {
+        font-size: 35px;
+        margin-bottom: 0.5rem; }
+      .bodyC main .datos div h3 {
+        font-size: 30px; }
+    .bodyC .redesC {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem; }
+      .bodyC .redesC h4 {
+        margin-bottom: 1rem; }
+      .bodyC .redesC a {
+        margin: 1.5rem; }
+      .bodyC .redesC img {
+        width: 55px; }
+    .bodyC .formu .tituloForm {
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      color: white;
+      padding-top: 1rem;
+      padding-bottom: 0.5rem; }
+      .bodyC .formu .tituloForm h4 {
+        font-size: 30px;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
+    .bodyC .formu .contForm form {
+      width: 60%;
+      margin-bottom: 1rem;
+      font-size: 22px; }
+      .bodyC .formu .contForm form fieldset div {
+        margin-top: 0.7rem; }
+      .bodyC .formu .contForm form fieldset .ayuda div label {
+        font-size: 22px; }
+    .bodyC footer {
+      margin-top: 1rem; }
+      .bodyC footer h4 {
+        padding: 1rem;
+        text-shadow: 1px 1px rgba(255, 0, 0, 0.219); } }
 
 /* Sobre nosotros */
 .bodySn {
