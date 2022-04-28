@@ -1,0 +1,7 @@
+@mixin bg-body {
+    height: 100vh;
+    background-image: url(../img/fondoNegro.jpg);
+    background-size: cover;
+    background-repeat: repeat; 
+    display: grid;
+}

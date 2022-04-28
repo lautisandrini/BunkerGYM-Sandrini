@@ -1,6 +1,9 @@
 // importo las variables
 @import "utilities/variables";
 
+// importo los mixin
+@import "utilities/mixins.scss";
+
 *{
     padding: 0;
     margin: 0;
@@ -9,11 +12,7 @@
 
 /* index */
 .bodyIndex{
-    height: 100vh;
-    background-image: url(../img/fondoNegro.jpg);
-    background-size: cover;
-    background-repeat: repeat; 
-    display: grid;
+    @include bg-body;
     grid-template-areas:"headerI headerI headerI"
                         "sectionM sectionM sectionM"
                         "sectionF redes sectionV"
@@ -183,11 +182,7 @@
 
 /* contactanos*/
 .bodyC{
-    height: 100vh;
-    display: grid;
-    background-image: url(../img/fondoNegro.jpg);
-    background-size: cover;
-    background-repeat: repeat;
+    @include bg-body;
     grid-template-areas:"headerC headerC headerC"
                         "headerC headerC headerC"
                         "info info info"
@@ -378,11 +373,7 @@
 
 /* Sobre nosotros */
 .bodySn{
-    height: 100vh;
-    display: grid;
-    background-image: url(../img/fondoNegro.jpg);
-    background-size: cover;
-    background-repeat: repeat;
+    @include bg-body;
     grid-template-areas:"headerSn headerSn headerSn"
                         "mainSn mainSn mainSn"
                         "mainSn mainSn mainSn"
@@ -488,9 +479,7 @@
 
 /* actividades */
 .bodyA{
-    background-image: url(../img/fondoNegro.jpg);
-    background-size: cover;
-    background-repeat: repeat;
+    @include bg-body;
     grid-template-areas:"headerA headerA headerA"
                         "headerA headerA headerA"
                         "mainA mainA mainA"
@@ -597,11 +586,10 @@
     }
 }
 
+
 /* galeria */
 .bodyG{
-    background-image: url(../img/fondoNegro.jpg);
-    background-size: cover;
-    background-repeat: repeat;
+    @include bg-body;
     grid-template-areas:"headerG headerG headerG"
                         "headerG headerG headerG"
                         "mainG mainG mainG"
@@ -610,7 +598,7 @@
                         "mainG mainG mainG"
                         "footerG footerG footerG";
     .headerG{
-        grid-area: headerA;
+        grid-area: headerG;
         background-image: linear-gradient(to right, $colorR, black, $colorR); 
         padding-bottom: 5px;
         nav{

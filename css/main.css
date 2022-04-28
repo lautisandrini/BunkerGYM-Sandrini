@@ -202,10 +202,10 @@
 /* contactanos*/
 .bodyC {
   height: 100vh;
-  display: grid;
   background-image: url(../img/fondoNegro.jpg);
   background-size: cover;
   background-repeat: repeat;
+  display: grid;
   grid-template-areas: "headerC headerC headerC" "headerC headerC headerC" "info info info" "info info info" "redesC redesC redesC" "formu formu formu" "formu formu formu" "formu formu formu" "footerC footerC footerC"; }
   .bodyC .headerC {
     grid-area: headerC;
@@ -418,10 +418,10 @@
 /* Sobre nosotros */
 .bodySn {
   height: 100vh;
-  display: grid;
   background-image: url(../img/fondoNegro.jpg);
   background-size: cover;
   background-repeat: repeat;
+  display: grid;
   grid-template-areas: "headerSn headerSn headerSn" "mainSn mainSn mainSn" "mainSn mainSn mainSn" "equipo equipo equipo" "equipo equipo equipo" "equipo equipo equipo" "footerSn footerSn footerSn"; }
   .bodySn .headerSn {
     grid-area: headerSn;
@@ -496,9 +496,11 @@
 
 /* actividades */
 .bodyA {
+  height: 100vh;
   background-image: url(../img/fondoNegro.jpg);
   background-size: cover;
   background-repeat: repeat;
+  display: grid;
   grid-template-areas: "headerA headerA headerA" "headerA headerA headerA" "mainA mainA mainA" "mainA mainA mainA" "mainA mainA mainA" "mainA mainA mainA" "footerA footerA footerA"; }
   .bodyA .headerA {
     grid-area: headerA;
@@ -570,12 +572,14 @@
 
 /* galeria */
 .bodyG {
+  height: 100vh;
   background-image: url(../img/fondoNegro.jpg);
   background-size: cover;
   background-repeat: repeat;
+  display: grid;
   grid-template-areas: "headerG headerG headerG" "headerG headerG headerG" "mainG mainG mainG" "mainG mainG mainG" "mainG mainG mainG" "mainG mainG mainG" "footerG footerG footerG"; }
   .bodyG .headerG {
-    grid-area: headerA;
+    grid-area: headerG;
     background-image: linear-gradient(to right, rgba(255, 0, 0, 0.219), black, rgba(255, 0, 0, 0.219));
     padding-bottom: 5px; }
     .bodyG .headerG nav div img {
