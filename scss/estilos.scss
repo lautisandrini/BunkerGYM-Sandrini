@@ -7,6 +7,9 @@
 // importo maps
 @import "utilities/maps";
 
+// importo extends
+@import "utilities/extends";
+
 *{
     padding: 0;
     margin: 0;
@@ -167,9 +170,7 @@
     }
     footer{
         grid-area: footer;
-        display: flex;
-        align-items: flex-end;
-        justify-content: end;
+        @extend %footer-flex;
         background-color: $colorN;
         h4{
             color: white;
@@ -358,8 +359,7 @@
     }
     footer{
         grid-area: footerC;
-        display: flex;
-        justify-content: flex-end;
+        @extend %footer-flex;
         margin-top: 2rem;
         background-color: $colorN;
         h4{
@@ -466,8 +466,7 @@
     }
     footer{
         grid-area: footerSn;
-        display: flex;
-        justify-content: flex-end;
+        @extend %footer-flex;
         margin-top: 2rem;
         background-color: $colorN;
         h3{
@@ -475,7 +474,7 @@
             color: white;
             text-shadow: 2px 2px $colorR;
             font-family: 'Roboto', sans-serif;
-            font-size: 15px ; 
+            font-size: 15px; 
         }
     }
 }
@@ -575,8 +574,7 @@
     }
     footer{
         grid-area: footerA;
-        display: flex;
-        justify-content: flex-end;
+        @extend %footer-flex;
         margin-top: 2rem;
         background-color: $colorN;
         h2{
@@ -689,8 +687,7 @@
     }
     footer{
         grid-area: footerG;
-        display: flex;
-        justify-content: flex-end;
+        @extend %footer-flex;
         margin-top: 2rem;
         background-color: $colorN;
         h4{

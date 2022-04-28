@@ -1,3 +1,8 @@
+.bodyIndex footer, .bodyC footer, .bodySn footer, .bodyA footer, .bodyG footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end; }
+
 * {
   padding: 0;
   margin: 0;
@@ -125,9 +130,6 @@
           transition: 300ms ease; }
   .bodyIndex footer {
     grid-area: footer;
-    display: flex;
-    align-items: flex-end;
-    justify-content: end;
     background-color: rgba(0, 0, 0, 0.87); }
     .bodyIndex footer h4 {
       color: white;
@@ -327,8 +329,6 @@
           text-decoration: underline 1px rgba(255, 0, 0, 0.219); }
   .bodyC footer {
     grid-area: footerC;
-    display: flex;
-    justify-content: flex-end;
     margin-top: 2rem;
     background-color: rgba(0, 0, 0, 0.87); }
     .bodyC footer h4 {
@@ -483,8 +483,6 @@
       border: solid rgba(0, 0, 0, 0.87) 5px; }
   .bodySn footer {
     grid-area: footerSn;
-    display: flex;
-    justify-content: flex-end;
     margin-top: 2rem;
     background-color: rgba(0, 0, 0, 0.87); }
     .bodySn footer h3 {
@@ -559,8 +557,6 @@
       width: 50%; }
   .bodyA footer {
     grid-area: footerA;
-    display: flex;
-    justify-content: flex-end;
     margin-top: 2rem;
     background-color: rgba(0, 0, 0, 0.87); }
     .bodyA footer h2 {
@@ -641,8 +637,6 @@
         border: solid rgba(0, 0, 0, 0.87) 5px; }
   .bodyG footer {
     grid-area: footerG;
-    display: flex;
-    justify-content: flex-end;
     margin-top: 2rem;
     background-color: rgba(0, 0, 0, 0.87); }
     .bodyG footer h4 {
