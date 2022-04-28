@@ -146,7 +146,7 @@
       .bodyIndex .headerI nav div img {
         width: 100px; }
       .bodyIndex .headerI nav div #navbarSupportedContent ul li {
-        text-align: start;
+        text-align: center;
         background-color: rgba(2, 2, 2, 0);
         font-size: 25px;
         padding-left: 0rem;
@@ -350,7 +350,7 @@
         .bodyC .headerC nav div img {
           width: 100px; }
         .bodyC .headerC nav div #navbarSupportedContent ul li {
-          text-align: start;
+          text-align: center;
           background-color: rgba(2, 2, 2, 0);
           font-size: 25px;
           padding-left: 0rem;

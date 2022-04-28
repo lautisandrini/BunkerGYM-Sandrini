@@ -1,15 +1,15 @@
 // media querie version movile del index
 
 @media only screen and (max-width:600px){
-        .bodyIndex{
-            grid-template-areas:"headerI headerI"
-                                "sectionM sectionM"
-                                "redes redes"
-                                "sectionF sectionV"
-                                "sectionF sectionV"
-                                "footer footer";
-            .headerI{
-                nav{
+    .bodyIndex{
+        grid-template-areas:"headerI headerI"
+                            "sectionM sectionM"
+                            "redes redes"
+                            "sectionF sectionV"
+                            "sectionF sectionV"
+                            "footer footer";
+        .headerI{
+            nav{
                     background-image:linear-gradient(to right, $colorN, $colorN);
                     margin-bottom: 2rem;
                     div{
@@ -19,8 +19,8 @@
                         #navbarSupportedContent{
                             ul{
                                 li{
-                                    text-align:start;
-                                    background-color: rgba(2, 2, 2, 0);
+                                    text-align:center;
+                                   background-color: rgba(2, 2, 2, 0);
                                     font-size: 25px;
                                     padding-left: 0rem;
                                     padding-right: 0rem;
@@ -36,68 +36,67 @@
                     }
                 }
             }
-            .sectionM{
-                padding-bottom: 0.5rem;
-                div{
-                    h2{
-                        margin-bottom: 1rem;
-                    }
-                }
-            }
-            .sectionF{
-                margin-left: 0.2rem;
-                p{
-                    font-size: 30px;
-                    margin-left: 1rem;
-                    margin-right: 4rem;
-                    margin-top: 6rem;
-                }
-            }
-            .sectionV{
-                align-items: center;
-                video{
-                    margin-right: 3rem;
-                    margin-top: 1rem;
-                }
-            }
-            .sectionR{
-                .redes{
-                    margin-top: 4rem;
-                    text-align: center;
-                    h3{
-                        font-size: 45px;
-                        padding-top: 1rem;
-                        padding-bottom: 1rem;
-                        padding-left: 2rem;
-                        padding-right: 2rem;
-                    }
-                }
-                .redes2{
-                    text-align: center;
-                    margin-bottom: 0.5rem;
-                    margin-top: 3rem;
-                    a{
-                        margin: 1.5rem;
-                    }
-                    img{
-                        width: 75px;
-                    }
-                }
-            }
-            footer{
-                // me falta agregar imagenes con link a las redes sociales al footer para hacerlo mas grande
-                align-items: flex-end;
-                justify-content: end;
-                background-color: $colorN;
-                margin-top: 5rem;
-                h4{
-                    text-shadow: 1px 1px $colorR;
-                    font-size: 15px ;
-                    margin-right: 0.5rem;
+        .sectionM{
+            padding-bottom: 0.5rem;
+            div{
+                h2{
+                    margin-bottom: 1rem;
                 }
             }
         }
-        
+        .sectionF{
+            margin-left: 0.2rem;
+            p{
+                font-size: 30px;
+                margin-left: 1rem;
+                margin-right: 4rem;
+                margin-top: 6rem;
+            }
+        }
+        .sectionV{
+            align-items: center;
+            video{
+                margin-right: 3rem;
+                margin-top: 1rem;
+            }
+        }
+        .sectionR{
+            .redes{
+                margin-top: 4rem;
+                text-align: center;
+                h3{
+                    font-size: 45px;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                }
+            }
+            .redes2{
+                text-align: center;
+                margin-bottom: 0.5rem;
+                margin-top: 3rem;
+                a{
+                    margin: 1.5rem;
+                }
+                img{
+                    width: 75px;
+                }
+            }
+        }
+        footer{
+            // me falta agregar imagenes con link a las redes sociales al footer para hacerlo mas grande
+            align-items: flex-end;
+            justify-content: end;
+            background-color: $colorN;
+            margin-top: 5rem;
+            h4{
+                text-shadow: 1px 1px $colorR;
+                font-size: 15px ;
+                margin-right: 0.5rem;
+            }
+        }
+    }        
 }
     
  

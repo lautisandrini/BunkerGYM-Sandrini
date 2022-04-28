@@ -4,6 +4,9 @@
 // importo los mixin
 @import "utilities/mixins.scss";
 
+// importo maps
+@import "utilities/maps";
+
 *{
     padding: 0;
     margin: 0;
@@ -246,12 +249,12 @@
     main{
         grid-area: info;
         h2{
-            margin-bottom: 20px;
+            margin-bottom: map-get($map: $subtitulos, $key: margin-bottom );
             font-family: 'Bebas Neue', cursive;
-            font-size: 60px;
+            font-size: map-get($map: $subtitulos, $key: font-size );
             color: white;
             text-shadow: 3px 3px $colorR;
-            text-align: center;
+            text-align: map-get($map: $subtitulos, $key: text-align );
             background-color: $colorN;
         }
         .datos{
