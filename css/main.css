@@ -25,26 +25,26 @@
         width: 150px;
         border-radius: 50%;
         border: 5px solid rgba(0, 0, 0, 0.87); }
-      .bodyIndex .headerI nav div #navbarSupportedContent ul li {
-        background-color: rgba(255, 0, 0, 0.219);
-        font-size: 25px;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        margin-left: 1.5rem;
-        border: 1px white solid; }
-        .bodyIndex .headerI nav div #navbarSupportedContent ul li:hover {
-          transform: scale(1.1);
-          transition: 1s; }
-        .bodyIndex .headerI nav div #navbarSupportedContent ul li a {
-          text-decoration: none;
-          font-family: 'Bebas Neue', cursive;
-          color: white;
-          text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
-          .bodyIndex .headerI nav div #navbarSupportedContent ul li a:hover {
+      .bodyIndex .headerI nav div #navbarSupportedContent ul {
+        margin-left: -1.2rem; }
+        .bodyIndex .headerI nav div #navbarSupportedContent ul li {
+          font-size: 28px;
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
+          border-bottom: 4px white solid; }
+          .bodyIndex .headerI nav div #navbarSupportedContent ul li:hover {
+            transform: scale(1.1);
+            transition: 1s; }
+          .bodyIndex .headerI nav div #navbarSupportedContent ul li a {
             text-decoration: none;
             font-family: 'Bebas Neue', cursive;
-            color: red;
+            color: white;
             text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
+            .bodyIndex .headerI nav div #navbarSupportedContent ul li a:hover {
+              text-decoration: none;
+              font-family: 'Bebas Neue', cursive;
+              color: red;
+              text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
   .bodyIndex .sectionM {
     grid-area: sectionM;
     padding-top: 1rem;
@@ -146,7 +146,8 @@
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.87));
       margin-bottom: 2rem; }
       .bodyIndex .headerI nav div img {
-        width: 100px; }
+        width: 100px;
+        border: 5px solid rgba(255, 0, 0, 0.219); }
       .bodyIndex .headerI nav div #navbarSupportedContent ul li {
         text-align: center;
         background-color: rgba(2, 2, 2, 0);
@@ -216,33 +217,33 @@
       width: 150px;
       border-radius: 50%;
       border: 5px solid rgba(0, 0, 0, 0.87); }
-    .bodyC .headerC nav div #navbarSupportedContent ul li {
-      background-color: rgba(255, 0, 0, 0.219);
-      font-size: 25px;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-      margin-left: 1.5rem;
-      border: 1px white solid; }
-      .bodyC .headerC nav div #navbarSupportedContent ul li:hover {
-        transform: scale(1.1);
-        transition: 1s; }
-      .bodyC .headerC nav div #navbarSupportedContent ul li a {
-        text-decoration: none;
-        font-family: 'Bebas Neue', cursive;
-        color: white;
-        text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
-        .bodyC .headerC nav div #navbarSupportedContent ul li a:hover {
+    .bodyC .headerC nav div #navbarSupportedContent ul {
+      margin-left: -1.2rem; }
+      .bodyC .headerC nav div #navbarSupportedContent ul li {
+        font-size: 28px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        border-bottom: 4px white solid; }
+        .bodyC .headerC nav div #navbarSupportedContent ul li:hover {
+          transform: scale(1.1);
+          transition: 1s; }
+        .bodyC .headerC nav div #navbarSupportedContent ul li a {
           text-decoration: none;
           font-family: 'Bebas Neue', cursive;
-          color: red;
+          color: white;
           text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
+          .bodyC .headerC nav div #navbarSupportedContent ul li a:hover {
+            text-decoration: none;
+            font-family: 'Bebas Neue', cursive;
+            color: red;
+            text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
     .bodyC .headerC div h1 {
       font-family: 'Bebas Neue', cursive;
       color: white;
       text-shadow: 3px 3px rgba(0, 0, 0, 0.87);
       font-size: 35px;
       text-align: center;
-      margin-top: -2rem; }
+      margin-top: -1rem; }
   .bodyC main {
     grid-area: info; }
     .bodyC main h2 {
@@ -348,7 +349,8 @@
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.87));
         margin-bottom: 2rem; }
         .bodyC .headerC nav div img {
-          width: 100px; }
+          width: 100px;
+          border: 5px solid rgba(255, 0, 0, 0.219); }
         .bodyC .headerC nav div #navbarSupportedContent ul li {
           text-align: center;
           background-color: rgba(2, 2, 2, 0);
@@ -430,33 +432,33 @@
       width: 150px;
       border-radius: 50%;
       border: 5px solid rgba(0, 0, 0, 0.87); }
-    .bodySn .headerSn nav div #navbarSupportedContent ul li {
-      background-color: rgba(255, 0, 0, 0.219);
-      font-size: 25px;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-      margin-left: 1.5rem;
-      border: 1px white solid; }
-      .bodySn .headerSn nav div #navbarSupportedContent ul li:hover {
-        transform: scale(1.1);
-        transition: 1s; }
-      .bodySn .headerSn nav div #navbarSupportedContent ul li a {
-        text-decoration: none;
-        font-family: 'Bebas Neue', cursive;
-        color: white;
-        text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
-        .bodySn .headerSn nav div #navbarSupportedContent ul li a:hover {
+    .bodySn .headerSn nav div #navbarSupportedContent ul {
+      margin-left: -1.2rem; }
+      .bodySn .headerSn nav div #navbarSupportedContent ul li {
+        font-size: 28px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        border-bottom: 4px white solid; }
+        .bodySn .headerSn nav div #navbarSupportedContent ul li:hover {
+          transform: scale(1.1);
+          transition: 1s; }
+        .bodySn .headerSn nav div #navbarSupportedContent ul li a {
           text-decoration: none;
           font-family: 'Bebas Neue', cursive;
-          color: red;
+          color: white;
           text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
+          .bodySn .headerSn nav div #navbarSupportedContent ul li a:hover {
+            text-decoration: none;
+            font-family: 'Bebas Neue', cursive;
+            color: red;
+            text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
     .bodySn .headerSn div h1 {
       font-family: 'Bebas Neue', cursive;
       color: white;
       text-shadow: 3px 3px rgba(0, 0, 0, 0.87);
       font-size: 35px;
       text-align: center;
-      margin-top: -2rem; }
+      margin-top: -1rem; }
   .bodySn main {
     grid-area: mainSn; }
     .bodySn main div {
@@ -508,33 +510,33 @@
       width: 150px;
       border-radius: 50%;
       border: 5px solid rgba(0, 0, 0, 0.87); }
-    .bodyA .headerA nav div #navbarSupportedContent ul li {
-      background-color: rgba(255, 0, 0, 0.219);
-      font-size: 25px;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-      margin-left: 1.5rem;
-      border: 1px white solid; }
-      .bodyA .headerA nav div #navbarSupportedContent ul li:hover {
-        transform: scale(1.1);
-        transition: 1s; }
-      .bodyA .headerA nav div #navbarSupportedContent ul li a {
-        text-decoration: none;
-        font-family: 'Bebas Neue', cursive;
-        color: white;
-        text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
-        .bodyA .headerA nav div #navbarSupportedContent ul li a:hover {
+    .bodyA .headerA nav div #navbarSupportedContent ul {
+      margin-left: -1.2rem; }
+      .bodyA .headerA nav div #navbarSupportedContent ul li {
+        font-size: 28px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        border-bottom: 4px white solid; }
+        .bodyA .headerA nav div #navbarSupportedContent ul li:hover {
+          transform: scale(1.1);
+          transition: 1s; }
+        .bodyA .headerA nav div #navbarSupportedContent ul li a {
           text-decoration: none;
           font-family: 'Bebas Neue', cursive;
-          color: red;
+          color: white;
           text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
+          .bodyA .headerA nav div #navbarSupportedContent ul li a:hover {
+            text-decoration: none;
+            font-family: 'Bebas Neue', cursive;
+            color: red;
+            text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
     .bodyA .headerA div h1 {
       font-family: 'Bebas Neue', cursive;
       color: white;
       text-shadow: 3px 3px rgba(0, 0, 0, 0.87);
       font-size: 35px;
       text-align: center;
-      margin-top: -2rem; }
+      margin-top: -1rem; }
   .bodyA main {
     grid-area: mainA; }
     .bodyA main h2 {
@@ -582,26 +584,26 @@
       width: 150px;
       border-radius: 50%;
       border: 5px solid rgba(0, 0, 0, 0.87); }
-    .bodyG .headerG nav div #navbarSupportedContent ul li {
-      background-color: rgba(255, 0, 0, 0.219);
-      font-size: 25px;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-      margin-left: 1.5rem;
-      border: 1px white solid; }
-      .bodyG .headerG nav div #navbarSupportedContent ul li:hover {
-        transform: scale(1.1);
-        transition: 1s; }
-      .bodyG .headerG nav div #navbarSupportedContent ul li a {
-        text-decoration: none;
-        font-family: 'Bebas Neue', cursive;
-        color: white;
-        text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
-        .bodyG .headerG nav div #navbarSupportedContent ul li a:hover {
+    .bodyG .headerG nav div #navbarSupportedContent ul {
+      margin-left: -1.2rem; }
+      .bodyG .headerG nav div #navbarSupportedContent ul li {
+        font-size: 28px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        border-bottom: 4px white solid; }
+        .bodyG .headerG nav div #navbarSupportedContent ul li:hover {
+          transform: scale(1.1);
+          transition: 1s; }
+        .bodyG .headerG nav div #navbarSupportedContent ul li a {
           text-decoration: none;
           font-family: 'Bebas Neue', cursive;
-          color: red;
+          color: white;
           text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
+          .bodyG .headerG nav div #navbarSupportedContent ul li a:hover {
+            text-decoration: none;
+            font-family: 'Bebas Neue', cursive;
+            color: red;
+            text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
     .bodyG .headerG div h1 {
       font-family: 'Bebas Neue', cursive;
       color: white;
