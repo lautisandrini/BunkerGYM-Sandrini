@@ -1,0 +1,72 @@
+// media queries version mobil de actividades
+
+@media only screen and (max-width:600px){
+    .bodyA{
+        grid-template-areas:"headerA headerA"
+                            "headerA headerA"
+                            "mainA mainA"
+                            "mainA mainA"
+                            "mainA mainA"
+                            "footerA footerA"
+                            "footerA fotterA";
+        .headerA{
+            background-image: none;
+            nav{
+                background-image:linear-gradient(to right, $colorN, $colorN);
+                margin-bottom: 2rem;
+                div{
+                    img{
+                        width: 100px;
+                        border: 5px solid $colorR;
+                    }
+                    #navbarSupportedContent{
+                        ul{
+                            li{
+                                text-align:center;
+                                background-color: rgba(2, 2, 2, 0);
+                                font-size: 25px;
+                                padding-left: 0rem;
+                                padding-right: 0rem;
+                                margin-right: 0rem;
+                                margin-left: 1.5rem;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+            div{
+                 h1{
+                    text-shadow: 2px 2px $colorR;
+                    font-size: 30px;
+                    text-align: center;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        main{
+            h2{
+                margin-bottom: 1rem;
+                font-size: 50px;
+                text-shadow: 2px 2px $colorR;
+                text-align: center;
+                background-color: $colorN;
+            }
+            div{
+                table{
+                    
+                    font-size: 30px;
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+        footer{
+            margin-top: 1rem;
+            h2{
+                padding: 1rem;
+                text-shadow: 1px 1px $colorR;
+            }
+        }
+    }
+}

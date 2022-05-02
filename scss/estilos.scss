@@ -441,7 +441,7 @@
             font-family: 'Roboto', sans-serif;
             margin-top: 20px;
             font-size: 20px;
-            padding: 10px 1px 10px 1px;
+            padding: 10px 100px 10px 100px;
             margin-bottom: 20px;
             h2{
                 font-family: 'Bebas Neue', cursive;
@@ -475,6 +475,8 @@
         }
     }
 }
+/*sobre nosotros version mobil*/
+@import "utilities/MQSobreNosotros";
 
 /* actividades */
 .bodyA{
@@ -583,6 +585,8 @@
     }
 }
 
+/* version mobile Actividades */
+@import "utilities/MQActividades";
 
 /* galeria */
 .bodyG{
