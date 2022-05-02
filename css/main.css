@@ -594,16 +594,16 @@
       text-shadow: 3px 3px rgba(255, 0, 0, 0.219);
       text-align: center;
       background-color: rgba(0, 0, 0, 0.87); }
-    .bodyA main div table {
+    .bodyA main div .table {
       font-family: 'Bebas Neue', cursive;
       font-size: 40px;
       margin-bottom: 1px;
       color: white; }
-      .bodyA main div table thead .titulo-tabla {
+      .bodyA main div .table thead .titulo-tabla {
         text-shadow: 2px 2px rgba(0, 0, 0, 0.87);
         text-decoration: underline rgba(255, 0, 0, 0.219); }
-    .bodyA main div tbody th, .bodyA main div tbody td {
-      width: 50%; }
+    .bodyA main div tbody tr td div {
+      font-size: 30px; }
   .bodyA footer {
     grid-area: footerA;
     margin-top: 2rem;
@@ -648,9 +648,12 @@
       text-shadow: 2px 2px rgba(255, 0, 0, 0.219);
       text-align: center;
       background-color: rgba(0, 0, 0, 0.87); }
-    .bodyA main div table {
-      font-size: 30px;
+    .bodyA main div .table {
+      font-size: 25px;
       margin-bottom: 0.5rem; }
+    .bodyA main div tbody tr td div {
+      font-size: 20px;
+      padding-bottom: 1.5rem; }
     .bodyA footer {
       margin-top: 1rem; }
       .bodyA footer h2 {
