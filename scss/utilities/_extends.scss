@@ -1,5 +1,12 @@
 %footer-flex{
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
+}
+
+%footer-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
