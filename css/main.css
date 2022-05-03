@@ -703,6 +703,7 @@
       text-align: center;
       background-color: rgba(0, 0, 0, 0.87); }
     .bodyA main div .table {
+      background-color: rgba(255, 0, 0, 0.219);
       font-family: 'Bebas Neue', cursive;
       font-size: 40px;
       margin-bottom: 1px;
@@ -791,10 +792,19 @@
       font-size: 20px;
       padding-bottom: 1.5rem; }
     .bodyA footer {
-      margin-top: 1rem; }
+      align-items: center;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
       .bodyA footer h2 {
-        padding: 1rem;
-        text-shadow: 1px 1px rgba(255, 0, 0, 0.219); } }
+        color: white;
+        text-shadow: 1px 1px rgba(255, 0, 0, 0.219);
+        font-size: 15px; }
+      .bodyA footer div img {
+        width: 30px; }
+      .bodyA footer h3 {
+        text-shadow: 1px 1px rgba(255, 0, 0, 0.219);
+        font-size: 12px; } }
 
 /* galeria */
 .bodyG {
