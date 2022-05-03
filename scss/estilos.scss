@@ -120,10 +120,11 @@
         grid-area: sectionV;
         display: flex;
         justify-content: center;
-        video{
+        iframe{
             width: 300px ;
             border:solid 5px $colorR;
             margin-top: 1rem;
+            margin-bottom: 1rem;
         }
     }
     .sectionR{
@@ -786,9 +787,8 @@
         }
         div{
             text-align: center;
-            
             h3{
-                margin: 10px;
+                margin: 1rem;
                 font-family: 'Bebas Neue', cursive;
                 font-size: 35px;
                 color: white;
@@ -797,29 +797,76 @@
                 background-color: $colorN;
             }
             p{
+                padding: 1rem;
                 img{
-                    width: 400px;
-                    border: solid $colorN 5px;
+                    width: 300px;
+                    height: 300px;
+                    padding: 0.2rem;
+                    background-color: $colorR;
+                    border-radius: 5%;
+                    &:hover{
+                        transform: scale(1.3);
+                        transition: 1s;
+                    }
                 }
-                .img2{
-                    width: 230px;
-                    border: solid $colorN 5px;
-                }
+            }
+        }
+        div{
+            iframe{
+                width: 400px;
+                height: 350px;
+                padding: 1rem;
+                background-color: $colorR;
             }
         }
     }
     footer{
         grid-area: footerG;
-        @extend %footer-flex;
+        @extend %footer-column;
         margin-top: 2rem;
         background-color: $colorN;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         h4{
-            padding: 10px;
             color: white;
             text-shadow: 2px 2px $colorR;
             font-family: 'Roboto', sans-serif;
-            font-size: 15px ; 
+            font-size: 25px;
+            padding-bottom: 1rem; 
         }
-    }   
+        div{
+            margin-bottom: 1.5rem;
+            a{
+                padding: 1rem;
+            }
+            img{
+                width: 40px;
+                border-radius: 50%;
+                &:hover{
+                    border-radius: 50%;
+                    border: 3px red solid;
+                    transform: scale(1.3);
+                    transition: 800ms ease;
+                }
+            }
+        }
+        h5{
+            color: white;
+            text-shadow: 2px 2px $colorR;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            padding-bottom: 1rem;
+        }
+        img{
+            width: 30px;
+            border-radius: 50%;
+            &:hover{
+                border-radius: 50%;
+                border: 3px red solid;
+                transform: scale(1.3);
+                transition: 800ms ease;
+            }
+        }
+        }   
 }
 
