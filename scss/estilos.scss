@@ -796,6 +796,9 @@
                 text-align: center;
                 background-color: $colorN;
             }
+            #carouselExampleFade{
+                display: none;
+            }
             p{
                 padding: 1rem;
                 img{
@@ -870,3 +873,5 @@
         }   
 }
 
+/*mediaquerie version mobile de Galeria*/
+@import "utilities/MQGaleria";

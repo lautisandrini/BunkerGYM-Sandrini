@@ -1,0 +1,99 @@
+// media queries version mobil de galeria
+
+@media only screen and (max-width:600px){
+    .bodyG{
+        grid-template-areas:"headerG headerG"
+                            "headerG headerG"
+                            "mainG mainG"
+                            "mainG mainG"
+                            "mainG mainG"
+                            "footerG footerG";
+        .headerG{
+            background-image: none;
+            nav{
+                background-image:linear-gradient(to right, $colorN, $colorN);
+                margin-bottom: 2rem;
+                div{
+                    img{
+                        width: 100px;
+                        border: 5px solid $colorR
+                    }
+                    #navbarSupportedContent{
+                        ul{
+                            li{
+                                text-align:center;
+                                background-color: rgba(2, 2, 2, 0);
+                                font-size: 25px;
+                                padding-left: 0rem;
+                                padding-right: 0rem;
+                                margin-right: 0rem;
+                                margin-left: 1.5rem;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+            div{
+                h1{
+                    text-shadow: 2px 2px $colorR;
+                    font-size: 30px;
+                    text-align: center;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        main{
+            h2{
+                margin-bottom: 1rem;
+                font-size: 50px;
+            }
+            div{
+                h3{
+                    margin: 0.5rem;
+                    font-size: 30px;
+                    color: white;
+                    text-shadow: 2px 2px $colorR;
+                    text-align: center;
+                    background-color: $colorN;
+                }
+                #carouselExampleFade{
+                    display: block;
+                    margin: auto;
+                }
+                p{
+                    display: none;
+                }
+            }
+            div{
+                iframe{
+                    width: 330px;
+                    height: 250px;
+                    padding: 1rem;
+                    background-color: $colorR;
+                }
+            }
+        }
+        footer{
+            align-items: center;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            h4{
+                color: white;
+                text-shadow: 1px 1px $colorR;
+                font-size: 15px;
+            }
+            div{
+                img{
+                    width: 30px;
+                }
+            }
+            h5{
+                text-shadow: 1px 1px $colorR;
+                font-size: 12px;
+            }
+        }
+    }
+}
