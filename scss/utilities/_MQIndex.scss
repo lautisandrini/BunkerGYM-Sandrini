@@ -1,6 +1,6 @@
-// media querie version movile del index
+// mediaquerie version movile y tablet del index
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:1023px){
     .bodyIndex{
         grid-template-areas:"headerI headerI"
                             "sectionM sectionM"
@@ -113,5 +113,3 @@
         }
     }        
 }
-    
- 

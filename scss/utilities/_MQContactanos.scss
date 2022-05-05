@@ -1,6 +1,6 @@
-// media querie version movile de contactanos.html
+// media querie version movile y tablet de contactanos
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:1023px){
     .bodyC{
         grid-template-areas:"headerC headerC"
                             "headerC headerC"
@@ -129,7 +129,7 @@
             }
             h5{
                 text-shadow: 1px 1px $colorR;
-                font-size: 12px;
+                font-size: 10px;
             }
         }                    
     }

@@ -1,6 +1,6 @@
-// mediaquerie version mobile de sobreNosotros.html
+// mediaquerie version mobile y tablet de sobreNosotros.html
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:1023px){
     .bodySn{
         grid-template-areas:"headerSn headerSn"
                             "headerSn headerSn"
@@ -88,7 +88,7 @@
             }
             h4{
                 text-shadow: 1px 1px $colorR;
-                font-size: 12px;
+                font-size: 10px;
             }
         }
     }

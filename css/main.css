@@ -37,9 +37,7 @@
             transform: scale(1.1);
             transition: 1s; }
           .bodyIndex .headerI nav div #navbarSupportedContent ul li a {
-            text-decoration: none;
             font-family: 'Bebas Neue', cursive;
-            color: white;
             text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
             .bodyIndex .headerI nav div #navbarSupportedContent ul li a:hover {
               text-decoration: none;
@@ -138,12 +136,12 @@
       color: white;
       text-shadow: 1px 1px rgba(255, 0, 0, 0.219);
       font-family: 'Roboto', sans-serif;
-      font-size: 20px;
+      font-size: 15px;
       margin-right: 5px; }
     .bodyIndex footer a {
       padding-left: 1rem; }
     .bodyIndex footer img {
-      width: 30px;
+      width: 20px;
       border-radius: 50%; }
       .bodyIndex footer img:hover {
         border-radius: 50%;
@@ -152,7 +150,7 @@
         transition: 500ms ease; }
 
 /* index version mobile */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1023px) {
   .bodyIndex {
     grid-template-areas: "headerI headerI" "sectionM sectionM" "redes redes" "sectionF sectionF" "sectionV sectionV" "footer footer"; }
     .bodyIndex .headerI nav {
@@ -254,9 +252,7 @@
           transform: scale(1.1);
           transition: 1s; }
         .bodyC .headerC nav div #navbarSupportedContent ul li a {
-          text-decoration: none;
           font-family: 'Bebas Neue', cursive;
-          color: white;
           text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
           .bodyC .headerC nav div #navbarSupportedContent ul li a:hover {
             text-decoration: none;
@@ -382,10 +378,10 @@
       color: white;
       text-shadow: 2px 2px rgba(255, 0, 0, 0.219);
       font-family: 'Roboto', sans-serif;
-      font-size: 20px;
+      font-size: 15px;
       padding-bottom: 1rem; }
     .bodyC footer img {
-      width: 30px;
+      width: 20px;
       border-radius: 50%; }
       .bodyC footer img:hover {
         border-radius: 50%;
@@ -394,7 +390,7 @@
         transition: 800ms ease; }
 
 /* contactanos version mobile */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1023px) {
   .bodyC {
     grid-template-areas: "headerC headerC" "headerC headerC" "info info" "info info" "redesC redesC" "formu formu" "formu formu" "footerC footerC"; }
     .bodyC .headerC {
@@ -476,7 +472,7 @@
         width: 30px; }
       .bodyC footer h5 {
         text-shadow: 1px 1px rgba(255, 0, 0, 0.219);
-        font-size: 12px; } }
+        font-size: 10px; } }
 
 /* Sobre nosotros */
 .bodySn {
@@ -504,9 +500,7 @@
           transform: scale(1.1);
           transition: 1s; }
         .bodySn .headerSn nav div #navbarSupportedContent ul li a {
-          text-decoration: none;
           font-family: 'Bebas Neue', cursive;
-          color: white;
           text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
           .bodySn .headerSn nav div #navbarSupportedContent ul li a:hover {
             text-decoration: none;
@@ -572,10 +566,10 @@
       color: white;
       text-shadow: 2px 2px rgba(255, 0, 0, 0.219);
       font-family: 'Roboto', sans-serif;
-      font-size: 20px;
+      font-size: 15px;
       padding-bottom: 1rem; }
     .bodySn footer img {
-      width: 30px;
+      width: 20px;
       border-radius: 50%; }
       .bodySn footer img:hover {
         border-radius: 50%;
@@ -584,7 +578,7 @@
         transition: 800ms ease; }
 
 /*sobre nosotros version mobil*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1023px) {
   .bodySn {
     grid-template-areas: "headerSn headerSn" "headerSn headerSn" "mainSn mainSn" "equipo equipo" "equipo equipo" "equipo equipo" "footerSn footerSn"; }
     .bodySn .headerSn {
@@ -643,7 +637,7 @@
         width: 30px; }
       .bodySn footer h4 {
         text-shadow: 1px 1px rgba(255, 0, 0, 0.219);
-        font-size: 12px; } }
+        font-size: 10px; } }
 
 /* actividades */
 .bodyA {
@@ -672,9 +666,7 @@
           transform: scale(1.1);
           transition: 1s; }
         .bodyA .headerA nav div #navbarSupportedContent ul li a {
-          text-decoration: none;
           font-family: 'Bebas Neue', cursive;
-          color: white;
           text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
           .bodyA .headerA nav div #navbarSupportedContent ul li a:hover {
             text-decoration: none;
@@ -737,10 +729,10 @@
       color: white;
       text-shadow: 2px 2px rgba(255, 0, 0, 0.219);
       font-family: 'Roboto', sans-serif;
-      font-size: 20px;
+      font-size: 15px;
       padding-bottom: 1rem; }
     .bodyA footer img {
-      width: 30px;
+      width: 20px;
       border-radius: 50%; }
       .bodyA footer img:hover {
         border-radius: 50%;
@@ -749,7 +741,7 @@
         transition: 800ms ease; }
 
 /* version mobile Actividades */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1023px) {
   .bodyA {
     grid-template-areas: "headerA headerA" "headerA headerA" "mainA mainA" "mainA mainA" "mainA mainA" "footerA footerA" "footerA fotterA"; }
     .bodyA .headerA {
@@ -800,7 +792,7 @@
         width: 30px; }
       .bodyA footer h3 {
         text-shadow: 1px 1px rgba(255, 0, 0, 0.219);
-        font-size: 12px; } }
+        font-size: 10px; } }
 
 /* galeria */
 .bodyG {
@@ -829,9 +821,7 @@
           transform: scale(1.1);
           transition: 1s; }
         .bodyG .headerG nav div #navbarSupportedContent ul li a {
-          text-decoration: none;
           font-family: 'Bebas Neue', cursive;
-          color: white;
           text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
           .bodyG .headerG nav div #navbarSupportedContent ul li a:hover {
             text-decoration: none;
@@ -911,10 +901,10 @@
       color: white;
       text-shadow: 2px 2px rgba(255, 0, 0, 0.219);
       font-family: 'Roboto', sans-serif;
-      font-size: 20px;
+      font-size: 15px;
       padding-bottom: 1rem; }
     .bodyG footer img {
-      width: 30px;
+      width: 20px;
       border-radius: 50%; }
       .bodyG footer img:hover {
         border-radius: 50%;
@@ -923,7 +913,7 @@
         transition: 800ms ease; }
 
 /*mediaquerie version mobile de Galeria*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1023px) {
   .bodyG {
     grid-template-areas: "headerG headerG" "headerG headerG" "mainG mainG" "mainG mainG" "mainG mainG" "footerG footerG"; }
     .bodyG .headerG {
@@ -960,6 +950,8 @@
       text-align: center;
       background-color: rgba(0, 0, 0, 0.87); }
     .bodyG main div #carouselExampleFade {
+      background-color: rgba(255, 0, 0, 0.219);
+      padding: 1.5rem;
       display: block;
       margin: auto; }
     .bodyG main div p {
@@ -982,4 +974,4 @@
         width: 30px; }
       .bodyG footer h5 {
         text-shadow: 1px 1px rgba(255, 0, 0, 0.219);
-        font-size: 12px; } }
+        font-size: 10px; } }
