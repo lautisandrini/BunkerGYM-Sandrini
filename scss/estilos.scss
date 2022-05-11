@@ -71,7 +71,7 @@
         div{
             h1{
                 text-align: center;
-                font-family: 'Anton', sans-serif;
+                font-family: $font1;
                 font-size: 60px;
                 color: white;
                 text-shadow: 9px 9px $colorN;
@@ -104,7 +104,7 @@
             font-size: 30px;
             color: white;
             text-shadow: 2px 2px $colorR;
-            font-family: 'Anton', sans-serif;
+            font-family: $font1;
             margin-top: 30px;
             animation-name: latir;
             animation-iteration-count: infinite;
@@ -127,6 +127,22 @@
     }
     .sectionR{
         grid-area: redes;
+        div{
+            p{
+                display: flex;
+                flex-direction: column;
+                color: white;
+                text-shadow: 2px 2px $colorN;
+                text-align: center;
+                justify-content: center;
+                font-family: $font1;
+                font-size: 25px;
+                margin-top: 2rem;
+                span{
+                    padding-top: 0.5rem;
+                }
+            }
+        }
         .redes{
             padding: 5px;
             font-family: 'Bebas Neue', cursive; 
@@ -134,7 +150,7 @@
             text-shadow: 3px 3px $colorN;
             display: flex;
             justify-content: center;
-            margin-top: 60px;
+            margin-top: 3rem;
             text-align: center;
             h3{
                 font-size: 40px;
@@ -174,7 +190,7 @@
         h4{
             color: white;
             text-shadow: 1px 1px $colorR;
-            font-family: 'Roboto', sans-serif;
+            font-family: $font2;
             font-size: 15px;
             margin-right: 5px;  
         }
@@ -376,7 +392,7 @@
         h4{
             color: white;
             text-shadow: 2px 2px $colorR;
-            font-family: 'Roboto', sans-serif;
+            font-family: $font2;
             font-size: 25px;
             padding-bottom: 1rem;
         }
@@ -399,7 +415,7 @@
         h5{
             color: white;
             text-shadow: 2px 2px $colorR;
-            font-family: 'Roboto', sans-serif;
+            font-family: $font2;
             font-size: 15px;
             padding-bottom: 1rem;
         }
@@ -482,7 +498,7 @@
             margin-top: 10px;
             background-color: $colorN;
             color: white;
-            font-family: 'Roboto', sans-serif;
+            font-family: $font2;
             margin-top: 20px;
             font-size: 20px;
             padding: 10px 100px 10px 100px;
@@ -515,7 +531,7 @@
         h3{
             color: white;
             text-shadow: 2px 2px $colorR;
-            font-family: 'Roboto', sans-serif;
+            font-family: $font2;
             font-size: 25px;
             padding-bottom: 1rem; 
         }
@@ -538,7 +554,7 @@
         h4{
             color: white;
             text-shadow: 2px 2px $colorR;
-            font-family: 'Roboto', sans-serif;
+            font-family: $font2;
             font-size: 15px;
             padding-bottom: 1rem;
         }
@@ -662,7 +678,7 @@
         h2{
             color: white;
             text-shadow: 2px 2px $colorR;
-            font-family: 'Roboto', sans-serif;
+            font-family: $font2;
             font-size: 25px;
             padding-bottom: 1rem; 
         }
@@ -685,7 +701,7 @@
         h3{
             color: white;
             text-shadow: 2px 2px $colorR;
-            font-family: 'Roboto', sans-serif;
+            font-family: $font2;
             font-size: 15px;
             padding-bottom: 1rem;
         }
@@ -792,7 +808,7 @@
             p{
                 padding: 1rem;
                 img{
-                    width: 300px;
+                    width: auto;
                     height: 300px;
                     padding: 0.2rem;
                     background-color: $colorR;
@@ -823,7 +839,7 @@
         h4{
             color: white;
             text-shadow: 2px 2px $colorR;
-            font-family: 'Roboto', sans-serif;
+            font-family: $font2;
             font-size: 25px;
             padding-bottom: 1rem; 
         }
@@ -846,7 +862,7 @@
         h5{
             color: white;
             text-shadow: 2px 2px $colorR;
-            font-family: 'Roboto', sans-serif;
+            font-family: $font2;
             font-size: 15px;
             padding-bottom: 1rem;
         }
