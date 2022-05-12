@@ -37,11 +37,11 @@
             transform: scale(1.1);
             transition: 1s; }
           .bodyIndex .headerI nav div #navbarSupportedContent ul li a {
-            font-family: 'Bebas Neue', cursive;
+            font-family: "Bebas Neue", cursive;
             text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
             .bodyIndex .headerI nav div #navbarSupportedContent ul li a:hover {
               text-decoration: none;
-              font-family: 'Bebas Neue', cursive;
+              font-family: "Bebas Neue", cursive;
               color: red;
               text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
   .bodyIndex .sectionM {
@@ -57,7 +57,7 @@
     .bodyIndex .sectionM div h2 {
       text-align: center;
       margin-bottom: 20px;
-      font-family: 'Bebas Neue', cursive;
+      font-family: "Bebas Neue", cursive;
       font-size: 35px;
       color: white;
       text-shadow: 6px 6px rgba(0, 0, 0, 0.87); }
@@ -103,13 +103,15 @@
       text-align: center;
       justify-content: center;
       font-family: "Anton", sans-serif;
-      font-size: 25px;
+      font-size: 28px;
       margin-top: 2rem; }
       .bodyIndex .sectionR div p span {
         padding-top: 0.5rem; }
+      .bodyIndex .sectionR div p .letraRoja {
+        color: red; }
     .bodyIndex .sectionR .redes {
       padding: 5px;
-      font-family: 'Bebas Neue', cursive;
+      font-family: "Bebas Neue", cursive;
       color: white;
       text-shadow: 3px 3px rgba(0, 0, 0, 0.87);
       display: flex;
@@ -266,15 +268,15 @@
           transform: scale(1.1);
           transition: 1s; }
         .bodyC .headerC nav div #navbarSupportedContent ul li a {
-          font-family: 'Bebas Neue', cursive;
+          font-family: "Bebas Neue", cursive;
           text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
           .bodyC .headerC nav div #navbarSupportedContent ul li a:hover {
             text-decoration: none;
-            font-family: 'Bebas Neue', cursive;
+            font-family: "Bebas Neue", cursive;
             color: red;
             text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
     .bodyC .headerC div h1 {
-      font-family: 'Bebas Neue', cursive;
+      font-family: "Bebas Neue", cursive;
       color: white;
       text-shadow: 3px 3px rgba(0, 0, 0, 0.87);
       font-size: 35px;
@@ -284,7 +286,7 @@
     grid-area: info; }
     .bodyC main h2 {
       margin-bottom: 20px;
-      font-family: 'Bebas Neue', cursive;
+      font-family: "Bebas Neue", cursive;
       font-size: 60px;
       color: white;
       text-shadow: 3px 3px rgba(255, 0, 0, 0.219);
@@ -292,7 +294,7 @@
       background-color: rgba(0, 0, 0, 0.87); }
     .bodyC main .datos {
       width: 100%;
-      font-family: 'Bebas Neue', cursive;
+      font-family: "Bebas Neue", cursive;
       font-size: 25px;
       margin-bottom: 1px;
       color: white;
@@ -308,7 +310,7 @@
         font-size: 35px; }
   .bodyC .redesC {
     grid-area: redesC;
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Bebas Neue", cursive;
     color: white;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.87);
@@ -334,7 +336,7 @@
     grid-area: formu; }
     .bodyC .formu .tituloForm {
       width: 100%;
-      font-family: 'Bebas Neue', cursive;
+      font-family: "Bebas Neue", cursive;
       margin-top: 10px;
       margin-bottom: 10px;
       color: white;
@@ -349,7 +351,7 @@
       .bodyC .formu .contForm form {
         width: 50%;
         margin-bottom: 20px;
-        font-family: 'Bebas Neue', cursive;
+        font-family: "Bebas Neue", cursive;
         font-size: 20px;
         color: white;
         background-color: rgba(0, 0, 0, 0.87);
@@ -514,15 +516,15 @@
           transform: scale(1.1);
           transition: 1s; }
         .bodySn .headerSn nav div #navbarSupportedContent ul li a {
-          font-family: 'Bebas Neue', cursive;
+          font-family: "Bebas Neue", cursive;
           text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
           .bodySn .headerSn nav div #navbarSupportedContent ul li a:hover {
             text-decoration: none;
-            font-family: 'Bebas Neue', cursive;
+            font-family: "Bebas Neue", cursive;
             color: red;
             text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
     .bodySn .headerSn div h1 {
-      font-family: 'Bebas Neue', cursive;
+      font-family: "Bebas Neue", cursive;
       color: white;
       text-shadow: 3px 3px rgba(0, 0, 0, 0.87);
       font-size: 35px;
@@ -540,7 +542,7 @@
       padding: 10px 100px 10px 100px;
       margin-bottom: 20px; }
       .bodySn main div h2 {
-        font-family: 'Bebas Neue', cursive;
+        font-family: "Bebas Neue", cursive;
         text-align: center;
         font-size: 35px;
         text-decoration: underline rgba(255, 0, 0, 0.219);
@@ -680,15 +682,15 @@
           transform: scale(1.1);
           transition: 1s; }
         .bodyA .headerA nav div #navbarSupportedContent ul li a {
-          font-family: 'Bebas Neue', cursive;
+          font-family: "Bebas Neue", cursive;
           text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
           .bodyA .headerA nav div #navbarSupportedContent ul li a:hover {
             text-decoration: none;
-            font-family: 'Bebas Neue', cursive;
+            font-family: "Bebas Neue", cursive;
             color: red;
             text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
     .bodyA .headerA div h1 {
-      font-family: 'Bebas Neue', cursive;
+      font-family: "Bebas Neue", cursive;
       color: white;
       text-shadow: 3px 3px rgba(0, 0, 0, 0.87);
       font-size: 35px;
@@ -698,7 +700,7 @@
     grid-area: mainA; }
     .bodyA main h2 {
       margin-bottom: 20px;
-      font-family: 'Bebas Neue', cursive;
+      font-family: "Bebas Neue", cursive;
       font-size: 60px;
       color: white;
       text-shadow: 3px 3px rgba(255, 0, 0, 0.219);
@@ -706,7 +708,7 @@
       background-color: rgba(0, 0, 0, 0.87); }
     .bodyA main div .table {
       background-color: rgba(255, 0, 0, 0.219);
-      font-family: 'Bebas Neue', cursive;
+      font-family: "Bebas Neue", cursive;
       font-size: 40px;
       margin-bottom: 1px;
       color: white; }
@@ -835,15 +837,15 @@
           transform: scale(1.1);
           transition: 1s; }
         .bodyG .headerG nav div #navbarSupportedContent ul li a {
-          font-family: 'Bebas Neue', cursive;
+          font-family: "Bebas Neue", cursive;
           text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
           .bodyG .headerG nav div #navbarSupportedContent ul li a:hover {
             text-decoration: none;
-            font-family: 'Bebas Neue', cursive;
+            font-family: "Bebas Neue", cursive;
             color: red;
             text-shadow: 2px 2px rgba(0, 0, 0, 0.87); }
     .bodyG .headerG div h1 {
-      font-family: 'Bebas Neue', cursive;
+      font-family: "Bebas Neue", cursive;
       color: white;
       text-shadow: 3px 3px rgba(0, 0, 0, 0.87);
       font-size: 35px;
@@ -853,7 +855,7 @@
     grid-area: mainG; }
     .bodyG main h2 {
       margin-bottom: 20px;
-      font-family: 'Bebas Neue', cursive;
+      font-family: "Bebas Neue", cursive;
       font-size: 60px;
       color: white;
       text-shadow: 3px 3px rgba(255, 0, 0, 0.219);
@@ -863,7 +865,7 @@
       text-align: center; }
       .bodyG main div h3 {
         margin: 1rem;
-        font-family: 'Bebas Neue', cursive;
+        font-family: "Bebas Neue", cursive;
         font-size: 35px;
         color: white;
         text-shadow: 2px 2px rgba(255, 0, 0, 0.219);
@@ -874,7 +876,7 @@
       .bodyG main div p {
         padding: 1rem; }
         .bodyG main div p img {
-          width: auto;
+          width: 300px;
           height: 300px;
           padding: 0.2rem;
           background-color: rgba(255, 0, 0, 0.219);

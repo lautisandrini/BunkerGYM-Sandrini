@@ -32,7 +32,7 @@
             margin-bottom: 0.5rem;
             div{
                 img{
-                    width: 150px;
+                    width: $medPrincipal *15;
                     border-radius: 50%;
                     border: 5px solid $colorN;
                 }
@@ -49,11 +49,11 @@
                                 transition: 1s;
                             }
                             a{
-                                font-family: 'Bebas Neue', cursive; 
+                                font-family: $font3; 
                                 text-shadow: 2px 2px $colorN;
                                 &:hover{
                                     text-decoration: none;
-                                    font-family: 'Bebas Neue', cursive; 
+                                    font-family: $font3; 
                                     color:red;
                                     text-shadow: 2px 2px $colorN;
                                 }
@@ -79,7 +79,7 @@
             h2{
                 text-align: center;
                 margin-bottom: 20px;
-                font-family: 'Bebas Neue', cursive;
+                font-family: $font3;
                 font-size: 35px;
                 color: white;
                 text-shadow: 6px 6px $colorN;
@@ -136,16 +136,19 @@
                 text-align: center;
                 justify-content: center;
                 font-family: $font1;
-                font-size: 25px;
+                font-size: 28px;
                 margin-top: 2rem;
                 span{
                     padding-top: 0.5rem;
+                }
+                .letraRoja{
+                    color: red;
                 }
             }
         }
         .redes{
             padding: 5px;
-            font-family: 'Bebas Neue', cursive; 
+            font-family: $font3; 
             color: white;
             text-shadow: 3px 3px $colorN;
             display: flex;
@@ -230,7 +233,7 @@
         nav{
             div{
                 img{
-                    width: 150px;
+                    width: $medPrincipal *15;
                     border-radius: 50%;
                     border: 5px solid $colorN;
                 }
@@ -247,11 +250,11 @@
                                 transition: 1s;
                             }
                             a{
-                                font-family: 'Bebas Neue', cursive; 
+                                font-family: $font3; 
                                 text-shadow: 2px 2px $colorN;
                                 &:hover{
                                     text-decoration: none;
-                                    font-family: 'Bebas Neue', cursive; 
+                                    font-family: $font3; 
                                     color:red;
                                     text-shadow: 2px 2px $colorN;
                                 }
@@ -263,7 +266,7 @@
         }
         div{
             h1{
-                font-family: 'Bebas Neue', cursive;
+                font-family: $font3;
                 color: white;
                 text-shadow: 3px 3px $colorN;
                 font-size: 35px;
@@ -276,7 +279,7 @@
         grid-area: info;
         h2{
             margin-bottom: map-get($map: $subtitulos, $key: margin-bottom );
-            font-family: 'Bebas Neue', cursive;
+            font-family: $font3;
             font-size: map-get($map: $subtitulos, $key: font-size );
             color: white;
             text-shadow: 3px 3px $colorR;
@@ -285,7 +288,7 @@
         }
         .datos{
             width: 100%;
-            font-family: 'Bebas Neue', cursive;
+            font-family: $font3;
             font-size: 25px;
             margin-bottom: 1px;
             color: white;
@@ -307,7 +310,7 @@
     }
     .redesC{
         grid-area: redesC;
-        font-family: 'Bebas Neue', cursive;
+        font-family: $font3;
         color: white;
         text-align: center;
         background-color: $colorN;
@@ -338,7 +341,7 @@
         grid-area: formu;
         .tituloForm{
             width: 100%;
-            font-family: 'Bebas Neue', cursive;
+            font-family: $font3;
             margin-top: 10px;
             margin-bottom: 10px;
             color: white;
@@ -355,7 +358,7 @@
             form{
                 width: 50%;
                 margin-bottom: 20px;
-                font-family: 'Bebas Neue', cursive;
+                font-family: $font3;
                 font-size: 20px;
                 color: white;
                 background-color: $colorN;
@@ -467,11 +470,11 @@
                                 transition: 1s;
                             }
                             a{
-                                font-family: 'Bebas Neue', cursive; 
+                                font-family: $font3; 
                                 text-shadow: 2px 2px $colorN;
                                 &:hover{
                                     text-decoration: none;
-                                    font-family: 'Bebas Neue', cursive; 
+                                    font-family: $font3; 
                                     color:red;
                                     text-shadow: 2px 2px $colorN;
                                 }
@@ -483,7 +486,7 @@
         }
         div{
             h1{
-                font-family: 'Bebas Neue', cursive;
+                font-family: $font3;
                 color: white;
                 text-shadow: 3px 3px $colorN;
                 font-size: 35px;
@@ -504,7 +507,7 @@
             padding: 10px 100px 10px 100px;
             margin-bottom: 20px;
             h2{
-                font-family: 'Bebas Neue', cursive;
+                font-family: $font3;
                 text-align: center;
                 font-size: 35px;
                 text-decoration: underline $colorR;
@@ -607,11 +610,11 @@
                                 transition: 1s;
                             }
                             a{
-                                font-family: 'Bebas Neue', cursive; 
+                                font-family: $font3; 
                                 text-shadow: 2px 2px $colorN;
                                 &:hover{
                                     text-decoration: none;
-                                    font-family: 'Bebas Neue', cursive; 
+                                    font-family: $font3; 
                                     color:red;
                                     text-shadow: 2px 2px $colorN;
                                 }
@@ -623,7 +626,7 @@
         }
         div{
             h1{
-                font-family: 'Bebas Neue', cursive;
+                font-family: $font3;
                 color: white;
                 text-shadow: 3px 3px $colorN;
                 font-size: 35px;
@@ -636,7 +639,7 @@
         grid-area: mainA;
         h2{
             margin-bottom: 20px;
-            font-family: 'Bebas Neue', cursive;
+            font-family: $font3;
             font-size: 60px;
             color: white;
             text-shadow: 3px 3px $colorR;
@@ -646,7 +649,7 @@
         div{
             .table{
                 background-color: $colorR;
-                font-family: 'Bebas Neue', cursive;
+                font-family: $font3;
                 font-size: 40px;
                 margin-bottom: 1px;
                 color: white;
@@ -755,11 +758,11 @@
                                 transition: 1s;
                             }
                             a{
-                                font-family: 'Bebas Neue', cursive; 
+                                font-family: $font3; 
                                 text-shadow: 2px 2px $colorN;
                                 &:hover{
                                     text-decoration: none;
-                                    font-family: 'Bebas Neue', cursive; 
+                                    font-family: $font3; 
                                     color:red;
                                     text-shadow: 2px 2px $colorN;
                                 }
@@ -771,7 +774,7 @@
         }
         div{
             h1{
-                font-family: 'Bebas Neue', cursive;
+                font-family: $font3;
                 color: white;
                 text-shadow: 3px 3px $colorN;
                 font-size: 35px;
@@ -784,7 +787,7 @@
         grid-area: mainG;
         h2{
             margin-bottom: 20px;
-            font-family: 'Bebas Neue', cursive;
+            font-family: $font3;
             font-size: 60px;
             color: white;
             text-shadow: 3px 3px $colorR;
@@ -795,7 +798,7 @@
             text-align: center;
             h3{
                 margin: 1rem;
-                font-family: 'Bebas Neue', cursive;
+                font-family: $font3;
                 font-size: 35px;
                 color: white;
                 text-shadow: 2px 2px $colorR;
@@ -808,7 +811,7 @@
             p{
                 padding: 1rem;
                 img{
-                    width: auto;
+                    width: 300px;
                     height: 300px;
                     padding: 0.2rem;
                     background-color: $colorR;
